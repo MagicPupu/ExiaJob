@@ -59,7 +59,6 @@
         </div>
         <br>
         <br>
-        <br>
         <div class="para1">
           <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo<br>
             casu idem Gallus de futuris incertus agitare quaedam conducentia salutisuae per itinera conaretur,
@@ -87,7 +86,7 @@
       <div class="card">
         <div class="front">
           <div class="front-content">
-            <img src="{{ asset('/images/homme1.png') }}" alt="logo" />
+            <img src="{{ asset('/images/homme1.png') }}" alt="photo" />
             <h1>Julien</h1>
             <p>Destinize membantu saya
               Mencari spot tempat wisata baru

@@ -145,7 +145,7 @@ main {
 
 .home-job {
     display: flex;
-    position: relative;
+    position: absolute;
     z-index: 1;
     display: block;
     margin-top: 3.5%;
@@ -154,6 +154,7 @@ main {
 
 /*deux barre de recherche*/
 .barre-recherche1 {
+    position: relative;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -187,7 +188,7 @@ main {
 }
 
 .barre-recherche2 {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -253,6 +254,7 @@ main {
 /* deuxième partie*/
 
 .recents {
+    margin-top: 250px;
     position: relative;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
