@@ -82,20 +82,23 @@
       <p>Offres récentes<p>
     </div>
 
-    <!--carte flip-->
-    <div class="card">
-      <div class="content">
+
+    <div class="container">
+      <div class="card">
         <div class="front">
-          <div class="etudiant">
-            <img src="{{ asset('images/homme1.png') }}" alt="photo">
+          <div class="front-content">
+            <img src="{{ asset('/images/homme1.png') }}" alt="logo" />
+            <h1>Julien</h1>
+            <p>Destinize membantu saya
+              Mencari spot tempat wisata baru
+              di Indonesia dengan Mudah</p>
+            <h2>Bordeaux 2023</h2>
+            <p>Figma, JavaScript, HTML</p>
           </div>
-        </div>
-        <div class="back">
-          Back!
         </div>
       </div>
     </div>
-    
+
     <br>
     <br>
     <br>
