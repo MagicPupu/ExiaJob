@@ -204,51 +204,22 @@
     <h1 id="etudiants-h1">Etudiants</h1>
 
     <div class="box-etudiants">
-      <div class="container-entreprise">
-        <div class="card-entreprise">
-          <div class="front-entreprise">
-            <div class="front-content-entreprise">
-              <img src="{{ asset('/images/profile_pictures/homme1.png') }}" alt="photo" />
-              <h1>Julien</h1>
-              <p>Destinize membantu saya
-                Mencari spot tempat wisata baru
-                di Indonesia dengan Mudah</p>
-              <h2>Bordeaux 2023</h2>
-              <p>Figma, JavaScript, HTML</p>
+      @foreach ($students as $student)
+          <div class="container-entreprise">
+            <div class="card-entreprise">
+              <div class="front-entreprise">
+                <div class="front-content-entreprise">
+                  <img src="{{ asset('/images/profile_pictures/'.$student->image) }}" alt="photo" />
+                  <h1>{{ $student->name }}</h1>
+                  <p>{{ $student->description }}</p>
+                  <h2>{{ $student->promo }}</h2>
+                  <p>{{ $student->skills }}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container-entreprise">
-        <div class="card-entreprise">
-          <div class="front-entreprise">
-            <div class="front-content-entreprise">
-              <img src="{{ asset('/images/profile_pictures/homme1.png') }}" alt="photo" />
-              <h1>Julien</h1>
-              <p>Destinize membantu saya
-                Mencari spot tempat wisata baru
-                di Indonesia dengan Mudah</p>
-              <h2>Bordeaux 2023</h2>
-              <p>Figma, JavaScript, HTML</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-entreprise">
-        <div class="card-entreprise">
-          <div class="front-entreprise">
-            <div class="front-content-entreprise">
-              <img src="{{ asset('/images/profile_pictures/homme1.png') }}" alt="photo" />
-              <h1>Julien</h1>
-              <p>Destinize membantu saya
-                Mencari spot tempat wisata baru
-                di Indonesia dengan Mudah</p>
-              <h2>Bordeaux 2023</h2>
-              <p>Figma, JavaScript, HTML</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      @endforeach
+      
     </div>
 
 

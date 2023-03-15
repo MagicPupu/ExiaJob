@@ -25,7 +25,7 @@ class StudentsTableSeeder extends Seeder
         $student->description = "Face It level 10, dev front end et souleveur de prof d'anglais";
         $student->promo = "Bordeaux 2023";
         $student->skills = "T O U T";
-        $student->image = "homme2.png";
+        $student->image = "homme2.jpg";
         $student->save();
 
         $student = new \App\Models\Students();
@@ -33,7 +33,7 @@ class StudentsTableSeeder extends Seeder
         $student->description = "El big râleur, dev back end";
         $student->promo = "Bordeaux 2023";
         $student->skills = "jtebz";
-        $student->image = "homme3.png";
+        $student->image = "homme3.jpg";
         $student->save();
     }
 }
