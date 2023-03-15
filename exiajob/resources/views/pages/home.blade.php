@@ -208,7 +208,7 @@
         <div class="card-entreprise">
           <div class="front-entreprise">
             <div class="front-content-entreprise">
-              <img src="{{ asset('/images/homme1.png') }}" alt="photo" />
+              <img src="{{ asset('/images/profile_pictures/homme1.png') }}" alt="photo" />
               <h1>Julien</h1>
               <p>Destinize membantu saya
                 Mencari spot tempat wisata baru
@@ -223,7 +223,7 @@
         <div class="card-entreprise">
           <div class="front-entreprise">
             <div class="front-content-entreprise">
-              <img src="{{ asset('/images/homme1.png') }}" alt="photo" />
+              <img src="{{ asset('/images/profile_pictures/homme1.png') }}" alt="photo" />
               <h1>Julien</h1>
               <p>Destinize membantu saya
                 Mencari spot tempat wisata baru
@@ -238,7 +238,7 @@
         <div class="card-entreprise">
           <div class="front-entreprise">
             <div class="front-content-entreprise">
-              <img src="{{ asset('/images/homme1.png') }}" alt="photo" />
+              <img src="{{ asset('/images/profile_pictures/homme1.png') }}" alt="photo" />
               <h1>Julien</h1>
               <p>Destinize membantu saya
                 Mencari spot tempat wisata baru
