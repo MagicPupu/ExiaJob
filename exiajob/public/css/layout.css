@@ -143,8 +143,6 @@ nav>ul li:hover .sous {
     margin-left: -98%;
 }
 
-
-
 .login button {
     padding: 10px 30px;
     background-color: #fcb4b5;
@@ -152,4 +150,10 @@ nav>ul li:hover .sous {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.login img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

@@ -30,7 +30,7 @@
     </div>
     <nav>
       <ul class="snip1198">
-        <li><a href="#">Acceuil</a></li>
+        <li><a href="/">Acceuil</a></li>
         <li><a href="#">Offres</a></li>
         <li><a href="#">Catégories</a>
           <ul class="sous">
@@ -38,16 +38,25 @@
             <li><a href="#">Catégories</a></li>
             <li><a href="#">Catégories</a></li>
           </ul>
-
-
         </li>
 
         <li><a href="#">Entreprises</a></li>
       </ul>
     </nav>
-    <div class="login">
-      <button type="button">Connexion</button>
+      <div class="login">
+        @if (auth()->guest())
+        <a href="login">
+          <button type="button">Connexion</button>
+        </a>
+        @endif
+
+        @if (auth()->check())
+        <a href="dashboard">
+          <img src="{{ asset('/images/mcdo.png') }}" alt="entreprise-photo"/>
+        </a>
+        @endif
     </div>
+    
   </header>
   
   @yield('content')
