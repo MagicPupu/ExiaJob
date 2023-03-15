@@ -16,7 +16,7 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('pages.home');
 })->name('home');
 
 Route::get('dashboard', DashboardController::class)->name('dashboard');
