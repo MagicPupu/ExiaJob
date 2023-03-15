@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('dashboard', DashboardController::class)->name('dashboard');
+Route::get('dashboard', DashboardController::class)->name('dashboard')->middleware('auth');
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');
-Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');

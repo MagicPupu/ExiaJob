@@ -1,4 +1,6 @@
-@extends('app')
+@extends('layout')
+
+<link rel="stylesheet" href="{{ asset('/css/home.css')}}">
 
 @section('content')
     <main>

@@ -4,7 +4,7 @@
 <head>
   <title>{{ config('app.name') }}</title>
   <meta charset="utf_8">
-  <link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
+  <link rel="stylesheet" href="{{ asset('/css/layout.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,9 @@
   <header>
     <div class="logo">
       <img src="{{ asset('/images/logo.png') }}" alt="logo">
-      <h1>ExiaJob</h1>
+      <a href="/">
+        <h1>{{ config('app.name') }}</h1>
+      </a>
     </div>
     <div class="search-bar">
       <span class="search-icon"><i class="fas fa-search"></i></span>
