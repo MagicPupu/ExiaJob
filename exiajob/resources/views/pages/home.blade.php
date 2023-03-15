@@ -53,7 +53,7 @@
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="entreprise-photo" />
+              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
               <h1>McDonald’s</h1>
               <h2>Développeur</h2>
               <p>Destinize membuat kamu selalu update
@@ -69,7 +69,7 @@
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="entreprise-photo" />
+              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
               <h1>McDonald’s</h1>
               <h2>Développeur</h2>
               <p>Destinize membuat kamu selalu update
@@ -85,7 +85,7 @@
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="entreprise-photo" />
+              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
               <h1>McDonald’s</h1>
               <h2>Développeur</h2>
               <p>Destinize membuat kamu selalu update
@@ -101,7 +101,7 @@
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="entreprise-photo" />
+              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
               <h1>McDonald’s</h1>
               <h2>Développeur</h2>
               <p>Destinize membuat kamu selalu update
@@ -125,75 +125,30 @@
 
 
     <div class="box-entreprise">
-      <div class="container-etudiant">
-        <div class="card-etudiant">
-          <div class="front-etudiant">
-            <div class="front-content-etudiant">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="photo" />
-              <p>Destinize membantu saya
-                Mencari spot tempat wisata baru
-                di Indonesia dengan Mudah</p>
-              <div class="etoiles">
-                <i id="etoile1" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile2" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile3" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile4" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile5" class="fa fa-star" aria-hidden="true"></i>
+      @foreach ($companies as $company)
+        <div class="container-etudiant">
+          <div class="card-etudiant">
+            <div class="front-etudiant">
+              <div class="front-content-etudiant">
+                <img src="{{ asset('/images/company_pictures/'.$company->image) }}" alt="photo" />
+                <p>{{ $company->description }}</p>
+                <div class="etoiles">
+                  <i id="etoile1" class="fa fa-star" aria-hidden="true"></i>
+                  <i id="etoile2" class="fa fa-star" aria-hidden="true"></i>
+                  <i id="etoile3" class="fa fa-star" aria-hidden="true"></i>
+                  <i id="etoile4" class="fa fa-star" aria-hidden="true"></i>
+                  <i id="etoile5" class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="front-content-etudiant-more"><a
+                    href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg"
+                    class="more-offres">{{ $company->offers }} offres</a></div>
+                <h2>{{ $company->name }}</h2>
               </div>
-              <div class="front-content-etudiant-more"><a
-                  href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg"
-                  class="more-offres">3 offres</a></div>
-              <h2>McDonald’s</h2>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-etudiant">
-        <div class="card-etudiant">
-          <div class="front-etudiant">
-            <div class="front-content-etudiant">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="photo" />
-              <p>Destinize membantu saya
-                Mencari spot tempat wisata baru
-                di Indonesia dengan Mudah</p>
-              <div class="etoiles">
-                <i id="etoile1" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile2" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile3" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile4" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile5" class="fa fa-star" aria-hidden="true"></i>
-              </div>
-              <div class="front-content-etudiant-more"><a
-                  href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg"
-                  class="more-offres">3 offres</a></div>
-              <h2>McDonald’s</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-etudiant">
-        <div class="card-etudiant">
-          <div class="front-etudiant">
-            <div class="front-content-etudiant">
-              <img src="{{ asset('/images/mcdo.png') }}" alt="photo" />
-              <p>Destinize membantu saya
-                Mencari spot tempat wisata baru
-                di Indonesia dengan Mudah</p>
-              <div class="etoiles">
-                <i id="etoile1" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile2" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile3" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile4" class="fa fa-star" aria-hidden="true"></i>
-                <i id="etoile5" class="fa fa-star" aria-hidden="true"></i>
-              </div>
-              <div class="front-content-etudiant-more"><a
-                  href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg"
-                  class="more-offres">3 offres</a></div>
-              <h2>McDonald’s</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+      @endforeach
+      
     </div>
 
 
