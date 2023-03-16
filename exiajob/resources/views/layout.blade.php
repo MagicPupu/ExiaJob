@@ -51,9 +51,11 @@
         @endif
 
         @if (auth()->check())
-        <a href="dashboard">
-          <img src="{{ asset('/images/mcdo.png') }}" alt="entreprise-photo"/>
-        </a>
+          @foreach ($users as $user)
+            <a href="dashboard">
+              <img src="{{ $user->image }}" alt="profile-picture"/>
+            </a>
+          @endforeach
         @endif
     </div>
     
