@@ -11,13 +11,6 @@
 <link rel="stylesheet" href="{{ asset('/css/variables.scss') }}">
 
 @section('content')
-    <h1>coucou {{ auth()->user()->name }}</h1>
-
-    <a href="#" onclick="document.getElementById('logout-form').submit()">
-        <form action="{{ route('logout') }}" method="post" id="logout-form">@csrf</form>
-        Se déconnecter
-    </a>
-
     <div class="box">
       <div class="photoNameAdress">
         <img src="{{ asset('/images/dashboard/photo.png') }}" alt="photo" id="profilePicture">
@@ -104,7 +97,14 @@
           </div>
         </div>
       </div>
-      <button type="button" id="deco">Déconnexion</button>
+      <div class="logout">
+        <a href="#" onclick="document.getElementById('logout-form').submit()">
+          <form action="{{ route('logout') }}" method="post" id="logout-form">
+            @csrf
+            <button type="button" id="deco">Déconnexion</button>
+          </form>
+        </a>
+      </div>
     </div>
   </div>
 </body>

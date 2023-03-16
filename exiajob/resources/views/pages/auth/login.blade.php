@@ -41,7 +41,7 @@
                                 </button>
                             </div>
                         </div>
-                    <button id="button-connexion" type="submit">Connexion</button>
+                        <button id="button-connexion" type="submit">Connexion</button>
                     </form>
                     <p id="texte-bas">Vous n'avez pas de compte, <span id="texte-bas-bleu">demandez à votre tuteur</span></p>
                 </div>

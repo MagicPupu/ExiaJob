@@ -334,3 +334,7 @@
     line-height: 44px;
     color: #272727;
 }
+
+.logout a {
+    text-decoration: none;
+}

@@ -54,10 +54,10 @@ body {
     float: left;
     flex: 1;
     text-align: center;
-    padding: 50px;
+    padding: 3.472%;
     margin-left: 15%;
     z-index: 0;
-    width: 350px;
+    width: 24.306%;
     height: 500px;
     background: linear-gradient(204.28deg, #FCB4B5 14.76%, #D1CCF4 97.11%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -107,11 +107,11 @@ body {
 .right {
     position: absolute;
     flex: 1;
-    padding: 50px;
+    padding: 3.472%;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
-    width: 550px;
+    width: 38.194%;
     height: 500px;
     border-radius: 40px;
     z-index: 1;
