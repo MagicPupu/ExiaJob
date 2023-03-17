@@ -12,8 +12,9 @@
 
 @section('content')
     <div class="box">
+      @foreach ($users_image as $image)
       <div class="photoNameAdress">
-        <img src="{{ asset('/images/dashboard/photo.png') }}" alt="photo" id="profilePicture">
+        <img src="{{ asset('/images/profile_pictures/'.$image) }}" alt="photo" id="profilePicture">
         <h0>Ned Flix</h0>
         <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
         <div class="adress">
@@ -23,6 +24,7 @@
             <div class="mailAdress">julien.leperse@gmail.com</div>
         </div>
       </div>
+      @endforeach
 
       <div class="bio">
         <h1>Biographie</h1>
