@@ -1,0 +1,377 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #FAFAFA;
+}
+
+.headd {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    border-radius: 8px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.headd h1 {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.headd p {
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.headd .tags {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headd .tags .tag {
+    color: #6F6F6F;
+    font-weight: 400;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #6F6F6F;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.headd .tags .more {
+    color: #6F6F6F;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 22px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.headd .search-box {
+    height: 60px;
+    width: 350px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.headd .search-box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    text-indent: 15px;
+    border: solid 1px #6F6F6F;
+}
+
+.headd .search-box .search-btn {
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    position: absolute;
+    margin-top: 17px;
+    top: 50%;
+    right: 5px;
+    background-color: #FCB4B5;
+    transform: translateY(-50%);
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bod {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.offre {
+    width: 70%;
+}
+
+.offre h1 {
+    text-indent: 2.5%;
+    margin-top: 0;
+}
+
+.offre .offre-detail {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 95%;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.offre .offre-detail .image {
+    width: 15%;
+}
+
+.offre .offre-detail .image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 70%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.offre .offre-detail .desc .titre {
+    font-size: 18px;
+}
+
+.offre .offre-detail .desc .job {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.offre .offre-detail .desc .detail {
+    display: flex;
+    height: auto;
+    width: 80%;
+    color: #141414;
+    opacity: 0.7;
+}
+
+.offre .offre-detail .desc .detail :where(.location, .duration, .salary, .time) {
+    width: 25%;
+    display: flex;
+}
+
+.offre .offre-detail .desc .detail :where(.location, .duration, .salary, .time) i {
+    height: min-content;
+    margin-right: 10px;
+}
+
+.offre .offre-detail .desc .detail img {
+    margin-right: 6px;
+    width: 18px;
+    height: 18px;
+}
+
+.offre .offre-detail .desc .detail :where(.location, .duration, .salary, .time) p {
+    margin-top: 0;
+}
+
+.offre .offre-detail .desc {
+    width: 85%;
+}
+
+.offre .offre-detail .desc .description {
+    color: #141414;
+    margin-top: -10px;
+    opacity: 0.7;
+    width: 90%;
+    text-align: justify;
+}
+
+.offre .offre-detail .save {
+    color: #141414;
+    opacity: 0.7;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.filter {
+    height: min-content;
+    width: 18%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    border-radius: 10px;
+    padding: 1px 25px 20px;
+}
+
+.wrapper :where(.title, li, li i, details) {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .title h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content p {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+:where(.localition, .salary, .date, .experience) {
+    display: block;
+}
+
+:where(.localition, .salary, .date, .experience, .lieu) h2 {
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+
+:where(.localition, .salary, .date, .experience) .container {
+    position: relative;
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    margin-left: 10%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.wrapper .content ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #a6a6a6;
+}
+
+.wrapper .content ul li {
+    list-style: none;
+    margin: 4px 3px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 5px 8px 5px 10px;
+    border: 1px solid #e3d1e1;
+}
+
+.wrapper .content ul li i {
+    height: 20px;
+    width: 20px;
+    color: #808080;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background: #dfdfdf;
+    justify-content: center;
+}
+
+.wrapper .content ul input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.wrapper .details {
+    justify-content: space-between;
+}
+
+.details button {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 9px 15px;
+    border-radius: 20px;
+    background: #FCB4B5;
+}
+
+.news {
+    background-color: #fff;
+    width: 18%;
+    border-radius: 8px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    height: min-content;
+}
+
+.news p,
+input,
+button {
+    margin-left: 20px;
+}
+
+.news h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.news input {
+    flex: 1;
+    border-radius: 10px;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.news p {
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.news i {
+    margin-right: 5px;
+}
+
+.news button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 24%;
+    padding: 10px;
+    border-radius: 20px;
+    background: #FCB4B5;
+    margin-bottom: 15px;
+}
+
+.lieu .search-box {
+    width: 70%;
+    position: relative;
+}
+
+.lieu .search-box input {
+    width: 100%;
+    background: #fff;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50px;
+    text-indent: 15px;
+    border: solid 1px #6F6F6F;
+}
+
+.lieu .search-box .search-btn {
+    color: #FCB4B5;
+    position: absolute;
+    margin-top: 4px;
+    top: 0%;
+    right: -20px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}

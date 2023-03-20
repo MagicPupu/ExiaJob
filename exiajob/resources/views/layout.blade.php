@@ -30,11 +30,11 @@
     </div>
     <nav>
       <ul class="snip1198">
-        <li><a href="/">Acceuil</a></li>
-        <li><a href="#">Offres</a></li>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="offers">Offres</a></li>
         <li><a href="#">Catégories</a>
           <ul class="sous">
-            <li><a href="#">Catégories</a></li>
+            <li><a href="#">Catégories</a></li> 
             <li><a href="#">Catégories</a></li>
             <li><a href="#">Catégories</a></li>
           </ul>
