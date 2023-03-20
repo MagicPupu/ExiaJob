@@ -159,16 +159,16 @@
     <h1 id="etudiants-h1">Etudiants</h1>
 
     <div class="box-etudiants">
-      @foreach ($students as $student)
+      @foreach ($users as $user)
           <div class="container-entreprise">
             <div class="card-entreprise">
               <div class="front-entreprise">
                 <div class="front-content-entreprise">
-                  <img src="{{ asset('/images/profile_pictures/'.$student->image) }}" alt="photo" />
-                  <h1>{{ $student->name }}</h1>
-                  <p>{{ $student->description }}</p>
-                  <h2>{{ $student->promo }}</h2>
-                  <p>{{ $student->skills }}</p>
+                  <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" />
+                  <h1>{{ $user->name }}</h1>
+                  <p>{{ $user->description }}</p>
+                  <h2>{{ $user->promo }}</h2>
+                  <p>{{ $user->skills }}</p>
                 </div>
               </div>
             </div>

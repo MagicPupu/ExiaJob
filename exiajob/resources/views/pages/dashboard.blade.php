@@ -12,28 +12,21 @@
 
 @section('content')
     <div class="box">
-      @foreach ($users_image as $image)
       <div class="photoNameAdress">
-        <img src="{{ asset('/images/profile_pictures/'.$image) }}" alt="photo" id="profilePicture">
-        <h0>Ned Flix</h0>
+        <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" id="profilePicture">
+        <h0>{{ $user->name }}</h0>
         <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
         <div class="adress">
             <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">
             <img src="{{ asset('/images/dashboard/image_48.png') }}" alt="logoMail" id="logoMail">
-            <div class="phoneNumber">06.31.44.69.39</div>
-            <div class="mailAdress">julien.leperse@gmail.com</div>
+            <div class="phoneNumber">{{ $user->phone }}</div>
+            <div class="mailAdress">{{ $user->email }}</div>
         </div>
       </div>
-      @endforeach
-
+      
       <div class="bio">
-        <h1>Biographie</h1>
-        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.</h3>
+        <h1>Description</h1>
+        <h3>{{ $user->description }}</h3>
       </div>
 
       <div class="skills">

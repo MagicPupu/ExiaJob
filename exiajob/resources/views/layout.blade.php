@@ -51,11 +51,11 @@
         @endif
 
         @if (auth()->check())
-          @foreach ($users_image as $user_image)
+          @auth
             <a href="dashboard">
-              <img src="{{ asset('/images/profile_pictures/'.$user_image) }}" alt="profile-picture"/>
+              <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
             </a>
-          @endforeach
+          @endauth
         @endif
     </div>
     

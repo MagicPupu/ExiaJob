@@ -18,7 +18,7 @@ class AuthController extends Controller
         ]);
 
         if (auth()->attempt($request->only('email', 'password'))) {
-            return redirect()->route('dashboard');
+            return redirect()->route('home');
         }
 
         return redirect()->back()->withErrors('Les identifiants ne correspondent pas.');

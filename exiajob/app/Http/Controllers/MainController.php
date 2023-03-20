@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Students;
+use App\Models\User;
 use App\Models\Companies;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -12,9 +11,9 @@ class MainController extends Controller
     
     public function index() {
 
-        $students = Students::all();
+        $users = User::all();
         $companies = Companies::all();
 
-    return view('pages.home', compact('students'), compact('companies'));
+    return view('pages.home', compact('users'), compact('companies'));
     }
 }
