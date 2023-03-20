@@ -94,220 +94,36 @@
         </div>
         
         <div class="offre">
-            <h1 class="number">126 offres</h1>
+            @foreach($offers as $offer)
+            <h1 class="number">{{ $offers->count() }} offres</h1>
             <div class="offre-detail">
                 <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
+                    <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="photo">
                 </div>
                 <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
+                    <p class="titre">{{ $offer->company_name }}</p>
+                    <p class="job">{{ $offer->offer_name }}</p>
                     <div class="detail">
                         <div class="location">
                             <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
+                            <p>{{ $offer->city }}</p>
                         </div>
                         <div class="duration">
                             <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
+                            <p>{{ $offer->duration }} mois</p>
                         </div>
                         <div class="salary">
                             <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
+                            <p>{{ $offer->price }}</p>
                         </div>
                         <div class="time">
                             <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
+                            <p>{{ $offer->add_date }}</p>
                         </div>
                     </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="description">{{ $offer->description }}</p>
                 </div>
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
-                </div>
-            </div>
-            <div class="offre-detail">
-                <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
-                </div>
-                <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
-                        </div>
-                    </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
-                </div>
-            </div>
-            <div class="offre-detail">
-                <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
-                </div>
-                <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
-                        </div>
-                    </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
-                </div>
-            </div>
-            <div class="offre-detail">
-                <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
-                </div>
-                <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
-                        </div>
-                    </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
-                </div>
-            </div>
-            <div class="offre-detail">
-                <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
-                </div>
-                <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
-                        </div>
-                    </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
-                </div>
-            </div>
-            <div class="offre-detail">
-                <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
-                </div>
-                <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
-                        </div>
-                    </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
-                </div>
-            </div>
-            <div class="offre-detail">
-                <div class="image">
-                    <img src="{{ asset('/images/offers/meaning-of-amazon-logo.jpg') }}" alt="">
-                </div>
-                <div class="desc">
-                    <p class="titre">Amazon</p>
-                    <p class="job">Sofware dev</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>Bordeaux</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>4 mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>500</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>29 minutes</p>
-                        </div>
-                    </div>
-                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
+                @endforeach
                 <div class="save">
                     <i class="fa-regular fa-bookmark fa-xl"></i>
                 </div>
