@@ -29,7 +29,9 @@
         <br>
         <br>
         <div class="offres">
-          <button type="button"><pre>Voir les offres ➔</pre></button>
+          <a href="offers">
+            <button type="button"><pre>Voir les offres ➔</pre></button>
+          </a>
         </div>
       </div>
     </div>
@@ -44,7 +46,7 @@
     <div class="recents">
       <p>Offres récentes<p>
           <div class="more"><a
-              href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg">Voir
+              href="offers">Voir
               plus</a></div>
     </div>
 
