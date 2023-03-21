@@ -28,8 +28,9 @@
         </div>
         <!--Offres recents-->
         <div class="offres">
-          <button type="button">
-            <pre>Voir les offres <div class="arrow"><i class="fas fa-arrow-right"></i></div></pre></button>
+          <a href="offers">
+            <button type="button"><pre>Voir les offres <div class="arrow"><i class="fas fa-arrow-right"></i></div></pre></button>
+          </a>
         </div>
         <!---->
       </div>
@@ -100,9 +101,7 @@
 
 
     <!--box etudiants-->
-    <div class="more-etudiants"><a
-        href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg"
-        class="more-etudiants">Voir les étudiants</a></div>
+    <div class="more-etudiants"><a href="students" class="more-etudiants">Voir les étudiants</a></div>
     <h1 id="etudiants-h1">Etudiants</h1>
 
     <div class="box-etudiants">

@@ -227,6 +227,7 @@ main {
     height: 149px;
     border-radius: 50%;
     margin-top: -25%;
+    object-fit: cover;
 }
 
 .entreprise-content h1 {
@@ -357,6 +358,7 @@ main {
     height: 149px;
     border-radius: 50%;
     margin-top: 4%;
+    object-fit: cover;
 }
 
 .front-content-entreprise h2 {
@@ -484,6 +486,7 @@ main {
     height: 149px;
     border-radius: 50%;
     margin-top: 10%;
+    object-fit: cover;
 }
 
 .front-content-etudiant h1 {

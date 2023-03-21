@@ -14,156 +14,6 @@ main {
     margin-right: 3.819%;
 }
 
-/*texte à gauche et image à droite*/
-.container {
-    flex-direction: row;
-    display: flex;
-}
-
-.gauche {
-    position: absolute;
-    text-align: left;
-}
-
-.phrase-accroche {
-    position: relative;
-    z-index: 2;
-    color: #181E4B;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
-    font-size: 76px;
-    width: 100%;
-    line-height: 89px;
-    margin-left: 5%;
-}
-
-.home-job {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    display: block;
-    margin-top: 3.5%;
-    margin-left: 38.125%;
-}
-
-
-.recents {
-    position: relative;
-    margin-top: 720px;
-    font-family: 'Plus Jakarta Sans', normal;
-    font-weight: 800px;
-    font-size: 56px;
-    line-height: 62px;
-
-}
-
-.recents a {
-    position: relative;
-    float: right;
-
-    margin-top: -100px;
-
-}
-
-
-.entreprise {
-    position: relative;
-    width: 300px;
-    height: 346px;
-    border-radius: 30px;
-    margin-top: 0px;
-}
-
-.entreprise-card {
-    position: relative;
-    width: 82%;
-    height: 100%;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    padding: 40px 35px;
-    background: #ebebeb;
-}
-
-.entreprise-front {
-    background-position: left;
-}
-
-.entreprise-content {
-    text-align: center;
-}
-
-.entreprise-content img {
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    margin-top: -25%;
-    object-fit: cover;
-}
-
-.entreprise-content h1 {
-    font-family: 'Plus Jakarta Sans', normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #252B42;
-}
-
-.entreprise-content h2 {
-    font-family: 'Plus Jakarta Sans', normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #252B42;
-}
-
-.entreprise-content p {
-    position: relative;
-    font-family: 'Plus Jakarta Sans', normal;
-    color: #5E6282;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-    margin-top: 20%;
-}
-
-.more {
-    position: relative;
-    float: right;
-    font-family: 'Plus Jakarta Sans', normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: #23A6F0;
-}
-
-.box-recent {
-    position: relative;
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    justify-items: center;
-}
-
-.more-entreprise {
-    position: relative;
-    font-family: 'Plus Jakarta Sans', normal;
-    margin-top: 150px;
-    text-align: center;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.095em;
-    color: #4737FF;
-}
-
-a.more-entreprise:link {
-    text-decoration: none;
-}
-
 #entreprises-h1 {
     position: relative;
     text-align: center;
@@ -220,14 +70,6 @@ a.more-entreprise:link {
     text-align: center;
 }
 
-.front-content-entreprise img {
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    margin-top: 4%;
-    object-fit: cover;
-}
-
 .front-content-entreprise h2 {
     position: relative;
     font-family: 'Plus Jakarta Sans', normal;
@@ -252,32 +94,7 @@ a.more-entreprise:link {
     margin-top: 7%;
 }
 
-.front-content-entreprise-more {
-    position: relative;
-    font-family: 'Plus Jakarta Sans', normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 8%;
 
-}
-
-
-
-.etoiles {
-    font-size: 1.4rem;
-    top: 150px;
-    margin-top: 5%;
-
-}
-
-.gray {
-    color: gray;
-}
-
-.gold {
-    color: gold;
-}
 
 .search-bar-entreprise {
     position: relative;
@@ -357,7 +174,7 @@ a.more-entreprise:link {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.863), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-#companyNumber {
+#studentNumber {
 
     position: relative;
     text-align: center;
@@ -368,4 +185,12 @@ a.more-entreprise:link {
 
 
 
+}
+
+.front-content-entreprise img {
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    margin-top: 10%;
+    object-fit: cover;
 }

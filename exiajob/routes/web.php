@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\CompaniesController;
+use App\Http\Controllers\StudentsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +30,5 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
 
 Route::get('companies', [CompaniesController::class, 'index'])->name('companies');
+
+Route::get('students', [StudentsController::class, 'index'])->name('students');
