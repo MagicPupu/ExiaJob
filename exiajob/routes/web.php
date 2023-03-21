@@ -5,6 +5,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OfferController;
+use App\Http\Controllers\CompaniesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +26,5 @@ Route::post('login', [AuthController::class, 'authenticate'])->name('authenticat
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
+
+Route::get('companies', [CompaniesController::class, 'index'])->name('companies');

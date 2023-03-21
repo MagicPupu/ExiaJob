@@ -1,14 +1,6 @@
 @extends('layout')
 
-<link href="https://fonts.googleapis.com/css?family=Plus+Jakarta Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}">
-<link rel="stylesheet" href="{{ asset('/css/variables.scss') }}">
 
 @section('content')
     <div class="box">

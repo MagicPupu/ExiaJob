@@ -1,7 +1,6 @@
 @extends('layout')
 
 <link rel="stylesheet" href="{{ asset('/css/login.css') }}">
-<script src="https://kit.fontawesome.com/3f820fe812.js" crossorigin="anonymous"></script>
 
 @section('content')
     <body>

@@ -1,7 +1,5 @@
 @extends('layout')
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/82bd8e2047.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ asset('/css/offers.css') }}">
 
 @section('content')
@@ -137,7 +135,7 @@
         </div>
         
     </div>    
-    <script src="{{ asset('/js/radio.js') }}"></script>
+    <script src="{{ asset('/js/offers.js') }}"></script>
 
 </body>
 @endsection

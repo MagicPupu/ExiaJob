@@ -1,3 +1,8 @@
+.page {
+    color: #ffffff;
+
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 5%;
@@ -41,141 +46,6 @@ main {
     margin-left: 38.125%;
 }
 
-/*deux barre de recherche*/
-.barre-recherche1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-    width: 260px;
-    height: 40px;
-    float: left;
-    margin-top: -5%;
-}
-
-.barre-recherche1 input[type="text"] {
-    border: none;
-    outline: none;
-    background: none;
-    flex: 1;
-    margin-left: 10px;
-    font-size: 14px;
-}
-
-.barre-recherche1 button[type="submit"] {
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: #555;
-}
-
-.submit1 {
-    font-size: inherit;
-}
-
-.barre-recherche2 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-    width: 260px;
-    height: 40px;
-    margin-left: 50%;
-    margin-top: -5%;
-}
-
-.barre-recherche2 input[type="text"] {
-    border: none;
-    outline: none;
-    background: none;
-    flex: 1;
-    margin-left: 10px;
-    font-size: 14px;
-}
-
-.barre-recherche2 button[type="submit"] {
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: #555;
-}
-
-.submit2 {
-    font-size: inherit;
-}
-
-.para1 {
-    position: absolute;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'Plus Jakarta Sans', normal;
-    left: 5%;
-}
-
-/*Bouton voir les offres*/
-.offres button {
-    background: #fcb4b5;
-    color: #ffffff;
-    border: none;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    cursor: pointer;
-    position: relative;
-    width: 198px;
-    height: 60px;
-    left: 5%;
-    box-shadow: 0px 20px 35px rgba(68.00001114606857, 117.0000234246254, 242.00000077486038, 0.20999999344348907);
-    font-weight: 700;
-    font-size: 16px;
-    font-family: 'Plus Jakarta Sans', normal;
-    margin-top: 28%;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-}
-
-.offres pre {
-    position: relative;
-    z-index: 100;
-    display: inline-block;
-}
-
-.offres button:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ff9294;
-    transition: 0.5s ease-in-out;
-    z-index: 100;
-}
-
-.offres button:hover:before {
-    width: 100%;
-}
-
-.arrow {
-    display: inline-block;
-    margin-top: 0;
-}
-
-
-
-/**/
-
-/* deuxième partie*/
 
 .recents {
     position: relative;
@@ -289,7 +159,7 @@ main {
     color: #4737FF;
 }
 
-.more-entreprise a:link {
+a.more-entreprise:link {
     text-decoration: none;
 }
 
@@ -316,13 +186,9 @@ main {
 
 .box-entreprise {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    justify-items: center;
-    margin-left: 3%;
-    margin-right: 3%;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* changer etudiant par entreprise*/
@@ -331,7 +197,8 @@ main {
     width: 366px;
     height: 452px;
     border-radius: 30px;
-    margin-top: 80px;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }
 
 .card-entreprise {
@@ -389,7 +256,6 @@ main {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    color: #23A6F0;
     margin-top: 8%;
 
 }
@@ -403,101 +269,101 @@ main {
 
 }
 
-.gold {
-    color: gold;
-}
-
 .gray {
     color: gray;
 }
 
-
-/* titre etudiant*/
-.more-etudiants {
-    position: relative;
-    font-family: 'Plus Jakarta Sans', normal;
-    margin-top: 150px;
-    text-align: center;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.095em;
-    color: #4737FF;
+.gold {
+    color: gold;
 }
 
-.more-etudiants a:link {
-    text-decoration: none;
-}
-
-#etudiants-h1 {
-    position: relative;
-    text-align: center;
-    font-family: 'Plus Jakarta Sans', normal;
-    font-weight: 800;
-    font-size: 56px;
-    line-height: 62px;
-}
-
-
-/* box etudiant*/
-
-.box-etudiants {
+.search-bar-entreprise {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
     justify-items: center;
-    margin-left: 3%;
-    margin-right: 3%;
 
 }
 
-/* changer entreprise par etudiant*/
-.container-etudiant {
-    position: relative;
-    width: 366px;
-    height: 452px;
-    border-radius: 30px;
-    margin-top: 80px;
-}
-
-.card-etudiant {
-    border: 1px solid #DEDEDE;
-    position: relative;
-    width: 87%;
-    height: 100%;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    padding: 40px 35px;
-}
-
-.front-etudiant {
-    background-position: left;
-}
-
-.front-content-etudiant {
-    text-align: center;
-}
-
-.front-content-etudiant img {
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    margin-top: 10%;
-}
-
-.front-content-etudiant h1 {
-    font-size: 30px;
-    font-family: 'Plus Jakarta Sans';
+.search-bar-entreprise input {
+    border-radius: 50px;
+    width: 488.86px;
+    height: 73px;
+    outline: none;
     color: black;
-    margin-top: 10%;
+    font-size: large;
 }
 
-.front-content-etudiant p {
+
+.search-icon-entreprise {
+    position: relative;
+    filter: invert(1);
+    font-size: 30px;
+    line-height: 60px;
+    right: -14px;
+}
+
+#blue-circle {
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #18A0FB;
+
+}
+
+#search-entreprise {
+    padding-left: 35px;
+    color: #000000;
+}
+
+.blue-search-icon {
+    position: absolute;
+    padding-left: 400px;
+}
+
+.search-bar-entreprise input[type=text] {
+    background-color: white;
+}
+
+.filtrer {
+    display: flex;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.842), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    cursor: pointer;
+    margin-right: -700px;
+}
+
+.filtrer:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.filtrer:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.863), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#companyNumber {
+
+    position: relative;
+    text-align: center;
     font-family: 'Plus Jakarta Sans', normal;
-    color: #737373;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.2px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 62px;
+
+
+
 }

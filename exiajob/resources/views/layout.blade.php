@@ -13,7 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/82bd8e2047.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3f820fe812.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +45,7 @@
         <li><a href="offers">Offres</a></li>
         <li><a href="#">Étudiants</a></li>
         <li><a href="#">Pilotes</a></li>
-        <li><a href="#">Entreprises</a></li>
+        <li><a href="companies">Entreprises</a></li>
       </ul>
     </nav>
       <div class="login">
