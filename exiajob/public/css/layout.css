@@ -118,31 +118,6 @@ header {
     right: 0;
 }
 
-.sous {
-    display: none;
-    background-color: white;
-    position: absolute;
-    width: 6.28%;
-    z-index: 1000;
-    border-left: 1px solid #fcb4b5;
-    border-right: 1px solid #fcb4b5;
-    border-bottom: 1px solid #fcb4b5;
-}
-
-nav>ul li:hover .sous {
-    display: block;
-}
-
-.sous li {
-    float: none;
-    width: 100%;
-    text-align: left;
-}
-
-.sous li a {
-    margin-left: -98%;
-}
-
 .login button {
     padding: 10px 30px;
     background-color: #fcb4b5;

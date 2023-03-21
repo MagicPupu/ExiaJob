@@ -134,12 +134,14 @@
               <div class="front-content-etudiant">
                 <img src="{{ asset('/images/company_pictures/'.$company->image) }}" alt="photo" />
                 <p>{{ $company->description }}</p>
+                <input type="hidden" id="note" value="{{ $company->rate }}">
                 <div class="etoiles">
-                  <i id="etoile1" class="fa fa-star" aria-hidden="true"></i>
-                  <i id="etoile2" class="fa fa-star" aria-hidden="true"></i>
-                  <i id="etoile3" class="fa fa-star" aria-hidden="true"></i>
-                  <i id="etoile4" class="fa fa-star" aria-hidden="true"></i>
-                  <i id="etoile5" class="fa fa-star" aria-hidden="true"></i>
+                @for ($i = 0; $i < $company->rate; $i++)
+                    <i class="gold fa fa-star" aria-hidden="true"></i>
+                @endfor
+                @for ($i = $company->rate; $i < 5; $i++)
+                    <i class="gray fa fa-star" class="gray" aria-hidden="true"></i>
+                @endfor
                 </div>
                 <div class="front-content-etudiant-more"><a
                     href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg"
@@ -161,7 +163,7 @@
     <h1 id="etudiants-h1">Etudiants</h1>
 
     <div class="box-etudiants">
-      @foreach ($users as $user)
+      @foreach ($last_3_users->reverse() as $user)
           <div class="container-entreprise">
             <div class="card-entreprise">
               <div class="front-entreprise">
@@ -185,3 +187,5 @@
     <br>
   </main>
 @endsection
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

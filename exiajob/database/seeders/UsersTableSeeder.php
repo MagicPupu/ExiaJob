@@ -44,5 +44,16 @@ class UsersTableSeeder extends Seeder
         $user->promo = "Bordeaux 2023";
         $user->skills = "jtebz";
         $user->save();
+
+        $user = new \App\Models\User();
+        $user->name = "Joe Biden";
+        $user->email = "joe.biden@gmail.com";
+        $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
+        $user->phone = '0625741586';
+        $user->image = "homme1.png";
+        $user->description = "président des usa";
+        $user->promo = "Rouen 2023";
+        $user->skills = "html, css";
+        $user->save();
     }
 }

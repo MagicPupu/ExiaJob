@@ -32,14 +32,8 @@
       <ul class="snip1198">
         <li><a href="/">Accueil</a></li>
         <li><a href="offers">Offres</a></li>
-        <li><a href="#">Catégories</a>
-          <ul class="sous">
-            <li><a href="#">Catégories</a></li> 
-            <li><a href="#">Catégories</a></li>
-            <li><a href="#">Catégories</a></li>
-          </ul>
-        </li>
-
+        <li><a href="#">Étudiants</a></li>
+        <li><a href="#">Pilotes</a></li>
         <li><a href="#">Entreprises</a></li>
       </ul>
     </nav>

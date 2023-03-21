@@ -359,23 +359,11 @@ a.more-offres:link {
 
 }
 
-.etoiles #etoile1 {
-    color: orange;
+.etoiles .gold {
+    color: gold;
 }
 
-.etoiles #etoile2 {
-    color: orange;
-}
-
-.etoiles #etoile3 {
-    color: orange;
-}
-
-.etoiles #etoile4 {
-    color: gray;
-}
-
-.etoiles #etoile5 {
+.etoiles .gray {
     color: gray;
 }
 
