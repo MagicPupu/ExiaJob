@@ -194,12 +194,12 @@ a.more-entreprise:link {
 
 /* changer etudiant par entreprise*/
 .container-entreprise {
+    display: inline-block;
     position: relative;
     width: 366px;
     height: 452px;
     border-radius: 30px;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    margin: 3% auto;
 }
 
 .card-entreprise {

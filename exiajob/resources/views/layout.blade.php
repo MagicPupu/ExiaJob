@@ -44,7 +44,7 @@
         <li><a href="/">Accueil</a></li>
         <li><a href="offers">Offres</a></li>
         <li><a href="students">Étudiants</a></li>
-        <li><a href="#">Pilotes</a></li>
+        <li><a href="pilots">Pilotes</a></li>
         <li><a href="companies">Entreprises</a></li>
       </ul>
     </nav>

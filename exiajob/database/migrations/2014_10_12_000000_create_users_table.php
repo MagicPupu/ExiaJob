@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('promo');
             $table->text('skills');
+            $table->string('status');
             $table->rememberToken();
             $table->timestamps();
         });

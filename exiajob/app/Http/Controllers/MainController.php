@@ -14,7 +14,7 @@ class MainController extends Controller
     
     public function index() {
 
-        $last_3_users = DB::table('users')->orderBy('id', 'desc')->take(3)->get();
+        $last_3_users = User::where('status', '=', 'student')->orderBy('id', 'desc')->take(3)->get();
         $companies = Companies::all();
         $offers = DB::table('offers')
                     ->join('companies', 'offers.idCompany', '=', 'companies.id')

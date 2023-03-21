@@ -14,7 +14,7 @@ main {
     margin-right: 3.819%;
 }
 
-#etudiants-h1 {
+#pilots-h1 {
     position: relative;
     text-align: center;
     font-family: 'Plus Jakarta Sans', normal;
@@ -23,7 +23,7 @@ main {
     line-height: 62px;
 }
 
-#sous-etudiants {
+#sous-pilots {
     position: relative;
     text-align: center;
     font-family: 'Plus Jakarta Sans', normal;
@@ -33,16 +33,17 @@ main {
 
 }
 
-/*box entreprise*/
+/*box pilot*/
 
-.box-etudiant {
+.box-pilot {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.container-etudiant {
+/* changer etudiant par pilot*/
+.container-pilot {
     position: relative;
     width: 366px;
     height: 452px;
@@ -50,7 +51,7 @@ main {
     margin: 3% auto;
 }
 
-.card-etudiant {
+.card-pilot {
     border: 1px solid #DEDEDE;
     position: relative;
     width: 87%;
@@ -60,15 +61,16 @@ main {
     padding: 40px 35px;
 }
 
-.front-etudiant {
+.front-pilot {
     background-position: left;
 }
 
-.front-content-etudiant {
+.front-content-pilot {
     text-align: center;
 }
 
-.front-content-etudiant h2 {
+
+.front-content-pilot h2 {
     position: relative;
     font-family: 'Plus Jakarta Sans', normal;
     font-weight: 600;
@@ -79,7 +81,7 @@ main {
     margin-top: 11%;
 }
 
-.front-content-etudiant p {
+.front-content-pilot p {
     position: relative;
     font-family: 'Plus Jakarta Sans', normal;
     color: #737373;
@@ -94,7 +96,7 @@ main {
 
 
 
-.search-bar-etudiant {
+.search-bar-pilot {
     position: relative;
     display: grid;
     margin: 0 20px;
@@ -104,7 +106,7 @@ main {
 
 }
 
-.search-bar-etudiant input {
+.search-bar-pilot input {
     border-radius: 50px;
     width: 488.86px;
     height: 73px;
@@ -114,7 +116,7 @@ main {
 }
 
 
-.search-icon-etudiant {
+.search-icon-pilot {
     position: relative;
     filter: invert(1);
     font-size: 30px;
@@ -132,7 +134,7 @@ main {
 
 }
 
-#search-etudiant {
+#search-pilot {
     padding-left: 35px;
     color: #000000;
 }
@@ -142,7 +144,7 @@ main {
     padding-left: 400px;
 }
 
-.search-bar-etudiant input[type=text] {
+.search-bar-pilot input[type=text] {
     background-color: white;
 }
 
@@ -180,15 +182,11 @@ main {
     font-weight: 800;
     font-size: 40px;
     line-height: 62px;
-
-
-
 }
 
-.front-content-etudiant img {
+.front-content-pilot img {
     width: 149px;
     height: 149px;
     border-radius: 50%;
     margin-top: 10%;
-    object-fit: cover;
 }

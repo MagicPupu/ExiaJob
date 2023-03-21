@@ -10,7 +10,7 @@ class StudentsController extends Controller
 {
     public function index() {
 
-        $students = User::all();
+        $students = User::where('status', '=', 'student')->get();
 
         return view('pages.students', compact('students'));
     }
