@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('company_name');
             $table->string('offer_name');
             $table->string('city');
             $table->integer('duration');
             $table->integer('price');
             $table->date('add_date');
             $table->text('description');
-            $table->string('image');
+            $table->bigInteger('idCompany')->unsigned();
+            $table->foreign('idCompany')->references('id')->on('companies');
         });
     }
 

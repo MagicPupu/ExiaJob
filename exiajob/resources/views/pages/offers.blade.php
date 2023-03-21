@@ -101,7 +101,7 @@
                     <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="photo">
                 </div>
                 <div class="desc">
-                    <p class="titre">{{ $offer->company_name }}</p>
+                    <p class="titre">{{ $offer->name }}</p>
                     <p class="job">{{ $offer->offer_name }}</p>
                     <div class="detail">
                         <div class="location">

@@ -59,7 +59,7 @@
       </div>
 
       <div class="trustedCompany">
-        <h1>Entreprise confiante</h1>
+        <h1>Favoris</h1>
         <div class="multiBox">
           <div class="boxSmall">
             <img src="{{ asset('/images/dashboard/logoAmazon.png') }}" alt="companyLogo" id="companyLogo" />

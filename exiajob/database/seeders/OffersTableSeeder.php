@@ -13,14 +13,13 @@ class OffersTableSeeder extends Seeder
     public function run(): void
     {
         $offer = new \App\Models\Offer();
-        $offer->company_name = 'Amazon';
         $offer->offer_name = 'Software dev';
         $offer->city = 'Bordeaux';
         $offer->duration = 4;
         $offer->price = 500;
         $offer->add_date = '2023-03-20';
-        $offer->description = 'Développeur soft pour amazon';
-        $offer->image = 'amazon.jpg';
+        $offer->description = 'Développeur soft pour McDo';
+        $offer->idCompany = 1;
         $offer->save();
     }
 }

@@ -52,68 +52,21 @@
 
     <div class="box-recent">
       <div class="entreprise">
+        @foreach ($offers as $offer)
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
-              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
-              <h1>McDonald’s</h1>
-              <h2>Développeur</h2>
-              <p>Destinize membuat kamu selalu update
-                terkait tempat liburan baru di Indonesia de...</p>
+              <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="entreprise-photo" />
+              <h1>{{ $offer->name }}</h1>
+              <h2>{{ $offer->offer_name }}</h2>
+              <p>{{ $offer->description }}</p>
               <div class="more"><a
                   href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg">Voir
                   plus</a></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="entreprise">
-        <div class="entreprise-card">
-          <div class="entreprise-front">
-            <div class="entreprise-content">
-              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
-              <h1>McDonald’s</h1>
-              <h2>Développeur</h2>
-              <p>Destinize membuat kamu selalu update
-                terkait tempat liburan baru di Indonesia de...</p>
-              <div class="more"><a
-                  href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg">Voir
-                  plus</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="entreprise">
-        <div class="entreprise-card">
-          <div class="entreprise-front">
-            <div class="entreprise-content">
-              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
-              <h1>McDonald’s</h1>
-              <h2>Développeur</h2>
-              <p>Destinize membuat kamu selalu update
-                terkait tempat liburan baru di Indonesia de...</p>
-              <div class="more"><a
-                  href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg">Voir
-                  plus</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="entreprise">
-        <div class="entreprise-card">
-          <div class="entreprise-front">
-            <div class="entreprise-content">
-              <img src="{{ asset('/images/company_pictures/mcdo.png') }}" alt="entreprise-photo" />
-              <h1>McDonald’s</h1>
-              <h2>Développeur</h2>
-              <p>Destinize membuat kamu selalu update
-                terkait tempat liburan baru di Indonesia de...</p>
-              <div class="more"><a
-                  href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg">Voir
-                  plus</a></div>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
     <div class="more-entreprise"><a
