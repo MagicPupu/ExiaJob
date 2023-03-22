@@ -1,0 +1,225 @@
+.offre-detail {
+    width: 95%;
+    background-color: #FAFAFA;
+    margin: 5% auto;
+    border-radius: 25px;
+    height: auto;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.titre {
+    color: #6D6D6D;
+    font-size: 2vw;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.job {
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.headd {
+    display: flex;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.desc {
+    margin-left: 30px;
+    margin-top: 1%;
+    margin-right: 35vw;
+}
+
+.headd img {
+    width: 20%;
+    height: min-content;
+    border-radius: 8px;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.detail {
+    display: flex;
+    color: #141414;
+    opacity: 0.7;
+    font-size: 1vw;
+}
+
+.detail .salary img {
+    margin-right: 6px;
+    width: 1.4vw;
+    height: 1.4vw;
+}
+
+.detail .salary h2 {
+    display: flex;
+}
+
+.salary,
+.dure,
+.local {
+    display: flex;
+}
+
+.detail .salary,
+.dure,
+.local {
+    display: flex;
+    margin-right: 3vw;
+}
+
+.detail .dure i,
+.local i {
+    margin-right: 4px;
+}
+
+.descr {
+    margin-left: 4%;
+    width: 80%;
+    text-align: justify;
+}
+
+.comp {
+    margin-left: 4%;
+}
+
+
+.tags .tag {
+    color: #6F6F6F;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #EFEFEF;
+    border-radius: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #6F6F6F;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.save {
+    color: #141414;
+    margin-right: 30px;
+    opacity: 0.7;
+    font-size: 3vw;
+    right: 0;
+    margin-top: 50px;
+}
+
+.details {
+    margin-left: 4%;
+}
+
+.avis {
+    display: flex;
+}
+
+.note {
+    display: inline;
+    margin-right: 30px;
+}
+
+.av {
+    background-color: #2A282E;
+    width: 10%;
+    border-radius: 25px;
+}
+
+.etoiles {
+    font-size: 1.4rem;
+    top: 150px;
+    margin-top: 5%;
+}
+
+.etoiles #etoile1 {
+    color: orange;
+}
+
+.etoiles #etoile2 {
+    color: orange;
+}
+
+.etoiles #etoile3 {
+    color: orange;
+}
+
+.etoiles #etoile4 {
+    color: orange;
+}
+
+.etoiles #etoile5 {
+    color: orange;
+}
+
+.tit {
+    display: flex;
+    color: #FCB4B5;
+}
+
+.p p {
+    color: white;
+    margin-top: 0;
+}
+
+.card h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.post button {
+    width: 15%;
+    height: 70px;
+    font-size: 1.4vw;
+    margin-left: 82%;
+    border: none;
+    outline: none;
+    background-color: #FCB4B5;
+    color: #fff;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+}
+
+.app {
+    display: flex;
+    width: 60%;
+}
+
+.app i {
+    margin-right: 3px;
+}
+
+.fini {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.pi {
+    width: 40%;
+}
+
+.app a {
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 2.5vw;
+    width: 20%;
+}
+
+.descri {
+    width: 80%;
+    text-align: justify;
+}
+
+.gray {
+    color: gray;
+}
+
+.gold {
+    color: gold;
+}

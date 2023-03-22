@@ -1,3 +1,4 @@
+// companies.blade.php
 const cards = document.querySelectorAll('.card-entreprise');
 
 cards.forEach(card => {

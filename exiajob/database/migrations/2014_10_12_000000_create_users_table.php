@@ -21,7 +21,9 @@ return new class extends Migration
             $table->string('image');
             $table->text('description');
             $table->string('promo');
-            $table->text('skills');
+            $table->string('first_skill');
+            $table->string('second_skill');
+            $table->string('third_skill');
             $table->string('status');
             $table->rememberToken();
             $table->timestamps();

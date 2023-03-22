@@ -18,7 +18,10 @@ class OffersTableSeeder extends Seeder
         $offer->duration = 4;
         $offer->price = 500;
         $offer->add_date = '2023-03-20';
-        $offer->description = 'Développeur soft pour McDo';
+        $offer->offer_description = 'Développeur soft pour McDo';
+        $offer->skill1 = 'Développement objet';
+        $offer->skill2 = 'Base de données';
+        $offer->skill3 = 'Méthode SCRUM';
         $offer->idCompany = 1;
         $offer->save();
     }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer("rate");
             $table->integer("offers");
             $table->string("image");
+            $table->string("link");
         });
     }
 

@@ -20,7 +20,9 @@ class UsersTableSeeder extends Seeder
         $user->image = "homme1.png";
         $user->description = "Je suis un développeur hors pair : Léon-Maker";
         $user->promo = "Bordeaux 2023";
-        $user->skills = "HTML, CSS, JS, SQL, PHP";
+        $user->first_skill = "Développement Web";
+        $user->second_skill = "Réseau";
+        $user->third_skill = "FrontEnd";
         $user->status = "student";
         $user->save();
 
@@ -32,7 +34,9 @@ class UsersTableSeeder extends Seeder
         $user->image = "homme2.png";
         $user->description = "Face It level 10, dev front end et souleveur de prof d'anglais";
         $user->promo = "Bordeaux 2023";
-        $user->skills = "T O U T";
+        $user->first_skill = "Développement Objet";
+        $user->second_skill = "Backend";
+        $user->third_skill = "Full Stack";
         $user->status = "student";
         $user->save();
 
@@ -44,7 +48,9 @@ class UsersTableSeeder extends Seeder
         $user->image = "homme3.png";
         $user->description = "El big râleur, dev back end";
         $user->promo = "Bordeaux 2023";
-        $user->skills = "jtebz";
+        $user->first_skill = "Wordpress";
+        $user->second_skill = "HTML";
+        $user->third_skill = "CSS";
         $user->status = "student";
         $user->save();
 
@@ -56,7 +62,9 @@ class UsersTableSeeder extends Seeder
         $user->image = "joebiden.png";
         $user->description = "président des usa";
         $user->promo = "Rouen 2023";
-        $user->skills = "html, css";
+        $user->first_skill = "Présidence";
+        $user->second_skill = "Entrepreunariat";
+        $user->third_skill = "Click on the red button";
         $user->status = "student";
         $user->save();
 
@@ -68,7 +76,9 @@ class UsersTableSeeder extends Seeder
         $user->image = "tat.png";
         $user->description = "Pilote des A2 2023 à Bordeaux";
         $user->promo = "Bordeaux 2023";
-        $user->skills = "Mettre des fec";
+        $user->first_skill = "Mettre des fec";
+        $user->second_skill = "Développement objet";
+        $user->third_skill = "Tuteur";
         $user->status = "pilot";
         $user->save();
     }

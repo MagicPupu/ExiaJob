@@ -28,7 +28,7 @@
         </div>
         <!--Offres recents-->
         <div class="offres">
-          <a href="offers">
+          <a href="{{ route('offers') }}">
             <button type="button"><pre>Voir les offres <div class="arrow"><i class="fas fa-arrow-right"></i></div></pre></button>
           </a>
         </div>
@@ -46,7 +46,7 @@
     <!--Offres recents-->
     <div class="recents">
       <p>Offres récentes<p>
-          <div class="more"><a href="offers">Voir plus</a></div>
+          <div class="more"><a href="{{ route('offers') }}">Voir plus</a></div>
     </div>
 
     <div class="box-recent">
@@ -66,7 +66,7 @@
         @endforeach
       </div>
     </div>
-    <div class="more-entreprise"><a href="companies" class="more-entreprise">Voir les différentes entreprises</a></div>
+    <div class="more-entreprise"><a href="{{ route('companies') }}" class="more-entreprise">Voir les différentes entreprises</a></div>
     <h1 id="entreprises-h1">Entreprises</h1>
     <p id="sous-entreprises">Penasaran apa saja review dari pengguna yang memakai aplikasi dan website Destinize buat
       <br> nentuin kemana liburan mereka selanjutnya? Yuk cek dibawah!</p>
@@ -101,7 +101,7 @@
 
 
     <!--box etudiants-->
-    <div class="more-etudiants"><a href="students" class="more-etudiants">Voir les étudiants</a></div>
+    <div class="more-etudiants"><a href="{{ route('students') }}" class="more-etudiants">Voir les étudiants</a></div>
     <h1 id="etudiants-h1">Etudiants</h1>
 
     <div class="box-etudiants">

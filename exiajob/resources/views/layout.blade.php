@@ -41,23 +41,23 @@
     </div>
     <nav>
       <ul class="snip1198">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="offers">Offres</a></li>
-        <li><a href="students">Étudiants</a></li>
-        <li><a href="pilots">Pilotes</a></li>
-        <li><a href="companies">Entreprises</a></li>
+        <li><a href="{{ route('home') }}">Accueil</a></li>
+        <li><a href="{{ route('offers') }}">Offres</a></li>
+        <li><a href="{{ route('students') }}">Étudiants</a></li>
+        <li><a href="{{ route('pilots') }}">Pilotes</a></li>
+        <li><a href="{{ route('companies') }}">Entreprises</a></li>
       </ul>
     </nav>
       <div class="login">
         @if (auth()->guest())
-        <a href="login">
+        <a href="{{ route('login') }}">
           <button type="button">Connexion</button>
         </a>
         @endif
 
         @if (auth()->check())
           @auth
-            <a href="dashboard">
+            <a href="{{ route('dashboard') }}">
               <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
             </a>
           @endauth

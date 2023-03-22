@@ -98,3 +98,10 @@ removeBtn.addEventListener("click", () => {
 })
 
 
+const cards = document.querySelectorAll('.offre-detail');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        window.location.href = 'offers/card';
+    })
+})

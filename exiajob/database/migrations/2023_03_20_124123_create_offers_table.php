@@ -19,7 +19,10 @@ return new class extends Migration
             $table->integer('duration');
             $table->integer('price');
             $table->date('add_date');
-            $table->text('description');
+            $table->text('offer_description');
+            $table->string('skill1');
+            $table->string('skill2');
+            $table->string('skill3');
             $table->bigInteger('idCompany')->unsigned();
             $table->foreign('idCompany')->references('id')->on('companies');
         });

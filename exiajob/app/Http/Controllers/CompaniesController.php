@@ -15,9 +15,4 @@ class CompaniesController extends Controller
 
         return view('pages.company.companies', compact('companies'));
     }
-
-    public function cards() {
-
-        return view('pages.company.cards');
-    }
 }
