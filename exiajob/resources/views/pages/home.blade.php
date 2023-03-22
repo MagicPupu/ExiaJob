@@ -50,8 +50,8 @@
     </div>
 
     <div class="box-recent">
+      @foreach ($offers as $offer)
       <div class="entreprise">
-        @foreach ($offers as $offer)
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
@@ -63,8 +63,8 @@
             </div>
           </div>
         </div>
-        @endforeach
       </div>
+      @endforeach
     </div>
     <div class="more-entreprise"><a href="{{ route('companies') }}" class="more-entreprise">Voir les différentes entreprises</a></div>
     <h1 id="entreprises-h1">Entreprises</h1>

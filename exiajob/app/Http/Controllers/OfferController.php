@@ -22,6 +22,7 @@ class OfferController extends Controller
     public function card($id) {
 
         $offers = Offer::findOrFail($id)
+                    ->where('companies.id', '=', $id)
                     ->join('companies', 'offers.idCompany', '=', 'companies.id')
                     ->select('offers.*', 'companies.*')
                     ->get();
