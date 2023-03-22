@@ -1,9 +1,10 @@
 @extends('layout')
 
-<link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/profile.css') }}">
 
 @section('content')
 <body>
+<h1>student</h1>
   <div class="page">
     <div class="box">
       <div class="photoNameAdress">
@@ -64,8 +65,13 @@
       </div>
       <div class="bottombutton">
         <button type="button" id="offre">Poster une offre</button>
-        <button type="button" id="deco">Déconnexion</button>
         <button type="button" id="etudiants">Ajouter un étudiant</button>
+        <a href="#" onclick="document.getElementById('logout-form').submit()">
+          <form action="{{ route('logout') }}" method="post" id="logout-form">
+            @csrf
+            <button type="button" id="deco">Déconnexion</button>
+          </form>
+        </a>
       </div>
     </div>
 </body>

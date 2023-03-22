@@ -57,9 +57,15 @@
 
         @if (auth()->check())
           @auth
-            <a href="{{ route('dashboard') }}">
-              <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
-            </a>
+            @if (Auth::user()->status == 'pilot')
+              <a href="{{ route('profile-pilot') }}">
+                <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
+              </a>
+            @elseif (Auth::user()->status == 'student')
+              <a href="{{ route('profile-student') }}">
+                <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
+              </a>
+            @endif
           @endauth
         @endif
     </div>

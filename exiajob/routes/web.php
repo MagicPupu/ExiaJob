@@ -4,16 +4,17 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\CompaniesController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProfileController;
 
 
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 
-Route::get('dashboard', DashboardController::class)->name('dashboard')->middleware('auth');
+Route::get('profile-pilot', [ProfileController::class, 'pilot'])->name('profile-pilot')->middleware('auth');
+Route::get('profile-student', [ProfileController::class, 'student'])->name('profile-student')->middleware('auth');
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');
