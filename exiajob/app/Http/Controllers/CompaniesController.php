@@ -13,6 +13,11 @@ class CompaniesController extends Controller
 
         $companies = Companies::all();
 
-        return view('pages.companies', compact('companies'));
+        return view('pages.company.companies', compact('companies'));
+    }
+
+    public function cards() {
+
+        return view('pages.company.cards');
     }
 }

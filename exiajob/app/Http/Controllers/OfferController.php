@@ -17,6 +17,6 @@ class OfferController extends Controller
                     ->select('offers.*', 'companies.*')
                     ->get();
 
-        return view('pages.offers', compact('offers'));
+        return view('pages.offer.offers', compact('offers'));
     }
 }

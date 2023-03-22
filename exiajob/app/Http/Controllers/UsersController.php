@@ -12,13 +12,13 @@ class UsersController extends Controller
 
         $students = User::where('status', '=', 'student')->get();
 
-        return view('pages.students', compact('students'));
+        return view('pages.user.students', compact('students'));
     }
 
     public function pilots() {
 
         $pilots = User::where('status', '=', 'pilot')->get();
 
-        return view('pages.pilots', compact('pilots'));
+        return view('pages.user.pilots', compact('pilots'));
     }
 }
