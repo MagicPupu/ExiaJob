@@ -12,17 +12,16 @@ class OfferController extends Controller
     
     public function index() {
 
-        $offers = DB::table('offers')
-                    ->join('companies', 'offers.idCompany', '=', 'companies.id')
+        $offers = Offer::join('companies', 'offers.idCompany', '=', 'companies.id')
                     ->select('offers.*', 'companies.*')
                     ->get();
 
         return view('pages.offer.offers', compact('offers'));
     }
 
-    public function card() {
+    public function card($id) {
 
-        $offers = DB::table('offers')
+        $offers = Offer::findOrFail($id)
                     ->join('companies', 'offers.idCompany', '=', 'companies.id')
                     ->select('offers.*', 'companies.*')
                     ->get();

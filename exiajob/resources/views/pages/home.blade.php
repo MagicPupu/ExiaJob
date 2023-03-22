@@ -59,7 +59,7 @@
               <h1>{{ $offer->name }}</h1>
               <h2>{{ $offer->name }}</h2>
               <p>{{ $offer->description }}</p>
-              <div class="more"><a href="https://www.affiches-parisiennes.com/content/articles/27812/main_adobestock103343942-ld.jpg">Voir plus</a></div>
+              <div class="more"><a href="offers/card/{{ $offer->id }}">Voir plus</a></div>
             </div>
           </div>
         </div>

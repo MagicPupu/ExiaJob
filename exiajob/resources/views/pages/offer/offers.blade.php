@@ -94,7 +94,7 @@
         <div class="offre">
             @foreach($offers as $offer)
             <h1 class="number">{{ $offers->count() }} offres</h1>
-            <div class="offre-detail">
+            <div class="offre-detail" id="{{ $offer->id }}">
                 <div class="image">
                     <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="photo">
                 </div>
