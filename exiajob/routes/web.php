@@ -16,12 +16,12 @@ Route::get('/', [MainController::class, 'index'])->name('home');
 
 Route::get('profile-pilot', [ProfileController::class, 'pilot'])->name('profile-pilot')->middleware('auth');
 Route::get('profile-student', [ProfileController::class, 'student'])->name('profile-student')->middleware('auth');
+Route::get('register', [ProfileController::class, 'register'])->name('register');
+Route::post('register', [ProfileController::class, 'store'])->name('store');
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
-
-Route::get('register', [RegisterController::class, 'index'])->name('register');
 
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
 Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-card');

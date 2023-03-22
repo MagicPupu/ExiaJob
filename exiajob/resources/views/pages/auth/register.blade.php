@@ -21,51 +21,49 @@
             </div>
 
             <div class="right">
-                <h2 id="veuillez-connecter">Créer un compte <br>étudiant</h2>
-                <script src="C:\Users\fabri\Desktop\ExiaJob\inscription.js"></script>
-                <div class="add-photo">
-                    <div class="avatar-upload">
-                        <div class="avatar-edit">
-                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                            <label for="imageUpload"></label>
-                        </div>
-                        <div class="avatar-preview">
-                            <div id="imagePreview" style="background-image: url({{ asset('/images/register/user.png') }});">
+                <form action="{{ route('store')}}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <h2 id="veuillez-connecter">Créer un compte <br>étudiant</h2>
+                    <div class="add-photo">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' name="image" id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url({{ asset('/images/register/user.png') }});">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="box-mail-password">
-                    <div class="box-login">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <div id="envelope"><i class="fa-regular fa-envelope"></i></div>
+                    <div class="box-mail-password">
+                        <div class="box-login">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <div id="envelope"><i class="fa-regular fa-envelope"></i></div>
+                        </div>
+                        <div class="box-login">
+                            <input type="text" id="email" name="name" placeholder="Nom et Prénom" required>
+                            <div id="envelope"><i class="far fa-user"></i></div>
+                        </div>
+                        <div class="box-login">
+                            <input type="text" id="email" name="promo" placeholder="Promotion" required>
+                            <div id="envelope"><i class="fas fa-school"></i></i></div>
+                        </div>
+                        <div class="box-login">
+                            <input type="text" id="email" name="centre" placeholder="Centre" required>
+                        <div id="envelope"><i class="fas fa-map-marker-alt"></i></i></div>
                     </div>
-                    <div class="box-login">
-                        <input type="email" id="email" name="email" placeholder="Nom et Prénom" required>
-                        <div id="envelope"><i class="far fa-user"></i></div>
+                        <div class="box-login">
+                            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                            <button type="button" id="show-password" aria-label="Afficher/masquer le mot de passe">
+                                <span class="toggle-icon" aria-hidden="true"><i class="fa fa-eye"></i></span>
+                                <span class="toggle-icon-hidden" aria-hidden="true"><i class="fa fa-eye-slash"></i></span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="box-login">
-                        <input type="email" id="email" name="email" placeholder="Promotion" required>
-                        <div id="envelope"><i class="fas fa-school"></i></i></div>
-                    </div>
-                    <div class="box-login">
-                        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
-                        <button type="button" id="show-password" aria-label="Afficher/masquer le mot de passe">
-                            <span class="toggle-icon" aria-hidden="true"><i class="fa fa-eye"></i></span>
-                            <span class="toggle-icon-hidden" aria-hidden="true"><i class="fa fa-eye-slash"></i></span>
-                        </button>
-                    </div>
-                    <div class="box-login">
-                        <input type="password" id="password" name="password" placeholder="Comfirmer le mdp"
-                            required>
-                        <button type="button" id="show-password" aria-label="Afficher/masquer le mot de passe">
-                            <span class="toggle-icon" aria-hidden="true"><i class="fa fa-eye"></i></span>
-                            <span class="toggle-icon-hidden" aria-hidden="true"><i class="fa fa-eye-slash"></i></span>
-                        </button>
-                    </div>
-                </div>
-                <button id="button-connexion" type="submit">Ajouter</button>
+                    <button id="button-connexion" type="submit">Ajouter</button>
+                </form>
             </div>
         </div>
     </main>
