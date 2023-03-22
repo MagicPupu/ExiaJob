@@ -10,6 +10,7 @@
       <div class="photoNameAdress">
         <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" id="profilePicture">
         <h0>{{ $user->name }}</h0>
+        
         <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
         <div class="adress">
           <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">

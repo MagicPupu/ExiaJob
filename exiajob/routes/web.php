@@ -16,8 +16,12 @@ Route::get('/', [MainController::class, 'index'])->name('home');
 
 Route::get('profile-pilot', [ProfileController::class, 'pilot'])->name('profile-pilot')->middleware('auth');
 Route::get('profile-student', [ProfileController::class, 'student'])->name('profile-student')->middleware('auth');
-Route::get('register', [ProfileController::class, 'register'])->name('register');
-Route::post('register', [ProfileController::class, 'store'])->name('store');
+
+Route::get('register-student', [ProfileController::class, 'register'])->name('register-student');
+Route::post('register-student', [ProfileController::class, 'store'])->name('store-student');
+
+Route::get('edit-profile', [ProfileController::class, 'edit'])->name('edit-profile')->middleware('auth');
+Route::patch('edit-profile/{id}', [ProfileController::class, 'update'])->name('update-profile');
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');

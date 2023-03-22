@@ -21,7 +21,7 @@
             </div>
 
             <div class="right">
-                <form action="{{ route('store')}}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('store-student')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <h2 id="veuillez-connecter">Créer un compte <br>étudiant</h2>
                     <div class="add-photo">

@@ -59,7 +59,30 @@ class ProfileController extends Controller
         $user->image = $imageName;
         $user->save();
 
-        return back()->with('Étuiant créé avec succès...');
+        return back();
 
+    }
+
+    public function edit() {
+
+        $user = Auth::user();
+
+        return view('pages.user.edit-profile', compact('user'));
+    }
+
+    public function update(Request $request, $id) {
+
+        dd('hello');
+
+        $user = User::findOrFail($id);
+        $user->description = $request->description;
+        $user->cv = $request->cv;
+        $user->phone = $request->phone;
+
+        dd($user);
+
+        $user->update();
+
+        return redirect('/')->with('success', 'profil mis à jour');
     }
 }

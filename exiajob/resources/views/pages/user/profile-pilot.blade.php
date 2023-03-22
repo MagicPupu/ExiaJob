@@ -9,7 +9,9 @@
       <div class="photoNameAdress">
         <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" id="profilePicture">
         <h0>{{ $user->name }}</h0>
-        <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
+        <a href="{{ route('edit-profile') }}">
+          <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
+        </a>
         <div class="adress">
           <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">
           <img src="{{ asset('/images/dashboard/image_48.png') }}" alt="logoMail" id="logoMail">
@@ -64,7 +66,7 @@
       </div>
       <div class="bottombutton">
         <button type="button" id="offre">Poster une offre</button>
-        <a href="{{ route('register') }}">
+        <a href="{{ route('register-student') }}">
           <button type="button" id="etudiants">Ajouter un étudiant</button>
         </a>
         <a href="#" onclick="document.getElementById('logout-form').submit()">

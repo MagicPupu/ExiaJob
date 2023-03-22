@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.contenaire {
+    padding: 3.472%;
+    background-color: #fff;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    height: 1050px;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Plus Jakarta Sans', normal;
+    text-align: center;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+    font-size: 76px;
+    line-height: 89px;
+}
+
+h1,
+h2 {
+    color: #181E4B;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    margin: 20px auto;
+    width: 50%;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 4px solid #B7B7B7;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #FCB4B5;
+}
+
+select {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px;
+    border: 4px solid #B7B7B7;
+    border-radius: 25px;
+    background-color: white;
+    appearance: none;
+    margin-bottom: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #FCB4B5;
+}
+
+.selected-skills {
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    border: 4px solid #B7B7B7;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.selected-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.selected-skills li {
+    font-size: 1.2rem;
+    color: #444;
+    padding: 5px;
+    border: 4px solid #B7B7B7;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.selected-skills li:hover {
+    background-color: #FCB4B5;
+}
+
+.additional-info {
+    width: 50%;
+    margin: 25px auto;
+}
+
+
+label {
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+    color: #181E4B;
+
+}
+
+#phone {
+    width: 50%;
+
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+#submit-btn {
+    width: 15%;
+    height: 50px;
+    border: none;
+    background: radial-gradient(122.09% 910.72% at 21.49% 0%, #FCB4B5 0%, #D1CCF4 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 51px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .search-box,
+    .selected-skills,
+    .additional-info {
+        width: 100%;
+    }
+}

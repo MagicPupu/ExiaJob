@@ -25,6 +25,8 @@
   <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/7F3iKz7X7B59D2v5z5u5g5/qLBw5mv1r0vzj+9" crossorigin="anonymous">
 </head>
 
 <body>

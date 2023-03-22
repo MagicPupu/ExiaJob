@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('second_skill')->nullable();
             $table->string('third_skill')->nullable();
             $table->string('status');
+            $table->string('cv')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
