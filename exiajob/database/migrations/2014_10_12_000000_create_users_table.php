@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('image');
             $table->text('description');
+            $table->string('centre');
             $table->string('promo');
             $table->string('first_skill');
             $table->string('second_skill');

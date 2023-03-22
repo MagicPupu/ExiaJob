@@ -19,7 +19,8 @@ class UsersTableSeeder extends Seeder
         $user->phone = '0656321475';
         $user->image = "homme1.png";
         $user->description = "Je suis un développeur hors pair : Léon-Maker";
-        $user->promo = "Bordeaux 2023";
+        $user->centre = "Bordeaux";
+        $user->promo = "CPI A2 Info";
         $user->first_skill = "Développement Web";
         $user->second_skill = "Réseau";
         $user->third_skill = "FrontEnd";
@@ -33,7 +34,8 @@ class UsersTableSeeder extends Seeder
         $user->phone = '0675841258';
         $user->image = "homme2.png";
         $user->description = "Face It level 10, dev front end et souleveur de prof d'anglais";
-        $user->promo = "Bordeaux 2023";
+        $user->centre = "Bordeaux";
+        $user->promo = "CPI A2 Info";
         $user->first_skill = "Développement Objet";
         $user->second_skill = "Backend";
         $user->third_skill = "Full Stack";
@@ -47,7 +49,8 @@ class UsersTableSeeder extends Seeder
         $user->phone = '0649751023';
         $user->image = "homme3.png";
         $user->description = "El big râleur, dev back end";
-        $user->promo = "Bordeaux 2023";
+        $user->centre = "Bordeaux";
+        $user->promo = "CPI A1";
         $user->first_skill = "Wordpress";
         $user->second_skill = "HTML";
         $user->third_skill = "CSS";
@@ -61,7 +64,8 @@ class UsersTableSeeder extends Seeder
         $user->phone = '0625741586';
         $user->image = "joebiden.png";
         $user->description = "président des usa";
-        $user->promo = "Rouen 2023";
+        $user->centre = "Bordeaux";
+        $user->promo = "CPI A3 Généraliste";
         $user->first_skill = "Présidence";
         $user->second_skill = "Entrepreunariat";
         $user->third_skill = "Click on the red button";
@@ -75,7 +79,8 @@ class UsersTableSeeder extends Seeder
         $user->phone = '0687451243';
         $user->image = "tat.png";
         $user->description = "Pilote des A2 2023 à Bordeaux";
-        $user->promo = "Bordeaux 2023";
+        $user->centre = "Bordeaux";
+        $user->promo = "CPI A1, CPI A2 Info, CPI A3 Info";
         $user->first_skill = "Mettre des fec";
         $user->second_skill = "Développement objet";
         $user->third_skill = "Tuteur";

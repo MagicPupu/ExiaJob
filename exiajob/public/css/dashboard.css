@@ -1,340 +1,325 @@
-.page {
-    background-color: rgba(255, 255, 255, 1);
-    position: relative;
-}
+ .page {
+     background-color: rgba(255, 255, 255, 1);
+     position: relative;
+ }
 
-.stars {
-    text-align: center;
-}
+ .stars {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
 
-.box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.019999999552965164);
-    position: relative;
-    margin-left: 2.5%;
-    margin-top: 5%;
-    margin-right: 2.5%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-radius: 40px;
-    height: auto;
-    padding-bottom: 5%;
+ .gold {
+    color: gold;
+ }
 
-}
-
-.boxSmall {
-    box-shadow: -3px 3px 6px rgba(172.00000494718552, 172.00000494718552, 172.00000494718552, 0.20000000298023224);
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1) 100%);
-    position: relative;
-    width: 365px;
-    height: 143px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin-top: 65px;
-}
-
-.addBoxSmall {
-    box-shadow: -3px 3px 6px rgba(172.00000494718552, 172.00000494718552, 172.00000494718552, 0.20000000298023224);
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1) 100%);
-    position: relative;
-    width: 365px;
-    height: 143px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin-top: 65px;
-}
-
-#companyLogo {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    border: 1px solid #000000;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    top: -30px;
-}
-
-.companyName {
-    color: rgba(0, 0, 0, 1);
-    width: 172px;
-    height: 30px;
-    position: relative;
-    font-family: 'Viga';
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 5;
-    display: block;
-    margin: auto;
-    top: -20px
-}
-
-
-.multiBox {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: column;
-    overflow-y: auto;
-    height: 250px;
-    padding-right: 75px;
-    padding-left: 75px;
-}
-
-.addBoxSmall .add {
-    position: relative;
-    font-family: 'Viga';
-    text-align: center;
-    font-size: 7pc;
-    letter-spacing: 0;
-    display: block;
-    cursor: pointer;
-}
-
-#star4 {
+ .gray {
     color: gray;
-    font-size: 1.4rem;
-    position: relative;
-    align-items: center;
-    top: -15px;
-}
+ }
 
-#star5 {
-    color: gray;
-    font-size: 1.4rem;
-    position: relative;
-    align-items: center;
-    top: -15px;
-}
+ .box {
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     background-color: rgba(0, 0, 0, 0.019999999552965164);
+     position: relative;
+     margin-left: 2.5%;
+     margin-top: 5%;
+     margin-right: 2.5%;
+     border-radius: 3vw;
+     width: 95%;
+     margin-bottom: 5%;
 
-#star3 {
-    color: rgb(231, 124, 64);
-    font-size: 1.4rem;
-    position: relative;
-    align-items: center;
-    top: -15px;
-}
+ }
 
-#star2 {
-    color: rgb(231, 124, 64);
-    font-size: 1.4rem;
-    position: relative;
-    align-items: center;
-    top: -15px;
-}
+ .boxSmall {
+     box-shadow: -3px 3px 6px rgba(172.00000494718552, 172.00000494718552, 172.00000494718552, 0.20000000298023224);
+     background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1) 100%);
+     position: relative;
+     border-top-left-radius: 2vw;
+     border-top-right-radius: 2vw;
+     border-bottom-left-radius: 2vw;
+     border-bottom-right-radius: 2vw;
+     width: 25vw;
+     height: 12.5vw;
+     margin: 2.5%;
+ }
 
-#star1 {
-    color: rgb(231, 124, 64);
-    font-size: 1.4rem;
-    position: relative;
-    align-items: center;
-    top: -15px;
-}
+ .addBoxSmall {
+     box-shadow: -3px 3px 6px rgba(172.00000494718552, 172.00000494718552, 172.00000494718552, 0.20000000298023224);
+     background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1) 100%);
+     position: relative;
+     border-top-left-radius: 2vw;
+     border-top-right-radius: 2vw;
+     border-bottom-left-radius: 2vw;
+     border-bottom-right-radius: 2vw;
+     width: 25vw;
+     height: 12.5vw;
+     margin: 2.5%;
+ }
 
-.offerNumber {
-    color: rgba(35, 166, 240, 1);
-    width: 59px;
-    height: 24px;
-    position: relative;
-    font-family: 'Plus Jakarta Sans';
-    text-align: center;
-    font-size: 14px;
-    letter-spacing: 0.2;
-    display: block;
-    margin: auto;
-    top: -7px;
-    cursor: pointer;
-}
+ #companyLogo {
+     width: 4vw;
+     border-radius: 50%;
+     border: 0.125vw solid #000000;
+     position: relative;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     top: -2vw;
+ }
 
-.box h1 {
-    font-family: 'Inter';
-    font-size: 24px;
-    margin-left: 2.5%;
-}
+ .companyName {
+     color: rgba(0, 0, 0, 1);
+     height: 2.5vw;
+     position: relative;
+     font-family: Viga;
+     text-align: center;
+     font-size: 1.5vw;
+     letter-spacing: 0.5vw;
+     display: block;
+     margin: auto;
+     top: -1vw
+ }
 
-.box h2 {
-    left: 73px;
-    font-family: 'Inter';
-    font-size: 24px;
-    width: 261;
-    font-size: 16px;
-}
 
-.skillName {
-    width: 179px;
-    height: 50px;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #656565;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-}
+ .multiBox {
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
 
-.smallerBox {
-    width: 168.52px;
-    height: fit-content;
-    background: #EFEFEF;
-    border-radius: 40px;
-    margin-top: 30px;
-    margin-left: 25px;
+ .addBoxSmall .add {
+     position: relative;
+     display: flex;
+     font-family: Viga;
+     cursor: pointer;
+     font-size: 8vw;
+     height: 100%;
+     width: 100%;
+     justify-content: center;
+ }
 
-}
+ #star4 {
+     color: gray;
+     font-size: 2vw;
+     position: relative;
+ }
 
-.addSmallerBox {
-    width: 168.52px;
-    height: 50px;
-    background: #EFEFEF;
-    border-radius: 40px;
-    margin-top: 30px;
-    margin-left: 25px;
+ #star5 {
+     color: gray;
+     font-size: 2vw;
+     position: relative;
+ }
 
-}
+ #star3 {
+     color: rgb(231, 124, 64);
+     font-size: 2vw;
+     position: relative;
+ }
 
-.addSmallerBox .add {
-    position: relative;
-    font-family: 'Viga';
-    text-align: center;
-    font-size: 4pc;
-    letter-spacing: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin-top: -13%;
+ #star2 {
+     color: rgb(231, 124, 64);
+     font-size: 2vw;
+     position: relative;
+ }
 
-}
+ #star1 {
+     color: rgb(231, 124, 64);
+     font-size: 2vw;
+     position: relative;
+ }
 
-.multiSmallerBox {
+ .offerNumber {
+     color: rgba(35, 166, 240, 1);
+     position: relative;
+     font-family: Plus Jakarta Sans;
+     text-align: center;
+     font-size: 1vw;
+     letter-spacing: 0.125vw;
+     display: block;
+     margin: auto;
+     top: 0.5vw;
+     cursor: pointer;
+ }
 
-    position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    align-items: center;
-    justify-items: center;
-    overflow: visible;
-}
+ .box h1 {
+     font-family: 'Inter';
+     font-size: 3vw;
+ }
 
-.bio h3 {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: justify;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    color: #6C6C6C;
-}
+ .box h2 {
+     font-family: 'Inter';
+     width: 261;
+     font-size: 1vw;
+     text-align: justify;
+ }
 
-.centrepromos {
-    margin-left: 2.5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-auto-flow: column;
-}
 
-#profilePicture {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px solid #000000;
-    position: relative;
-    display: block;
-    margin-left: 45px;
-    margin-top: 45px;
-    cursor: pointer;
-}
+ .smallerBox {
+     height: fit-content;
+     background: #EFEFEF;
+     border-radius: 4vw;
+     margin-top: 1vw;
+     margin-left: 2vw;
 
-.photoNameAdress {
-    display: grid;
-    grid-template-columns: 20% 18% 25%;
-    grid-auto-flow: column;
-    align-items: baseline;
-}
+ }
 
-.box h0 {
-    font-family: 'DM Sans';
-    font-size: 64px;
-    line-height: 150%;
-    align-items: center;
-    margin-top: 30%;
-}
+ .multiSmallerBox {
 
-#edit {
-    width: 70px;
-    height: 70px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
+     position: relative;
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: start;
+     align-items: center;
+     justify-items: center;
+     overflow: visible;
+ }
 
-}
+ .bio {
+     padding-top: 2.5%;
+ }
 
-#deco {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background: #FCB4B5;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    font-family: 'Public Sans';
-    font-size: 24px;
-    color: #FFFFFF;
-    width: 213px;
-    height: 69px;
-    border: 1.5px solid #FFFFFF;
-    cursor: pointer;
-    display: block;
-    margin-left: 42%;
-}
+ .bio h3 {
+     font-family: 'Inter';
+     font-weight: 500;
+     font-size: 2vw;
+     text-align: justify;
+     padding-left: 3vw;
+     padding-right: 2.5%;
+     color: #6C6C6C;
+ }
 
-.adress {
-    position: relative;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 50px 50px;
-    grid-auto-flow: column;
-    overflow-y: auto;
-    height: 100px;
-    top: -20%;
-}
+ .centrepromos {
+     display: grid;
+     grid-template-columns: 25% 25%;
+     grid-auto-flow: column;
+ }
 
-#logoTel {
-    width: 25px;
-    height: 25px;
-    margin-top: 20%;
-}
+ #profilePicture {
+     height: 10vw;
+     border-radius: 50%;
+     border: 1px solid #000000;
+     position: relative;
+     display: block;
+     margin-left: 30%;
+     margin-top: 20%;
+     cursor: pointer;
+ }
 
-#logomail {
-    width: 25px;
-    height: 25px;
-    margin-top: 20%;
-}
+ .photoNameAdress {
+     display: grid;
+     grid-template-columns: 20% 20% 25% 35%;
+     grid-auto-flow: column;
+     align-items: baseline;
+     grid-template-rows: 40%;
+ }
 
-.phoneNumber {
-    font-family: 'Nunito Sans';
-    font-size: 32px;
-    line-height: 44px;
-    color: #272727;
-}
+ .box h0 {
+     font-family: 'DM Sans';
+     font-size: 4vw;
+     line-height: 150%;
+     margin-top: 30%;
+ }
 
-.mailAdress {
-    font-family: 'Nunito Sans';
-    font-size: 32px;
-    line-height: 44px;
-    color: #272727;
-}
+ #edit {
+     width: 4vw;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+     cursor: pointer;
 
-.logout a {
-    text-decoration: none;
-}
+ }
+
+ .adress {
+     position: relative;
+     display: grid;
+     grid-template-rows: 4vw 4vw;
+     grid-auto-flow: column;
+     grid-template-columns: 4vw 27vw;
+     top: -20%;
+ }
+
+ #logoTel {
+     width: 2vw;
+     padding: 1vw;
+ }
+
+ #logomail {
+     width: 2vw;
+     padding: 1vw;
+ }
+
+ .phoneNumber {
+     font-family: 'Nunito Sans';
+     font-size: 2vw;
+     padding: 1vw;
+ }
+
+ .mailAdress {
+     font-family: 'Nunito Sans';
+     font-size: 2vw;
+     padding: 1vw;
+ }
+
+ .offredeco {
+     padding-top: 5%;
+     padding-bottom: 5%;
+     width: 100%;
+     display: inline-flex;
+     justify-content: space-around;
+ }
+
+
+ .multiSmallerBox button {
+     cursor: pointer;
+     width: fit-content;
+     min-width: 10vw;
+     font-family: 'Inter';
+     font-weight: 500;
+     font-size: 1.5vw;
+     display: flex;
+     align-items: center;
+     color: #656565;
+     flex-wrap: nowrap;
+     justify-content: center;
+     padding-left: 1vw;
+     padding-right: 1vw;
+     border: 1vw solid rgba(255, 255, 255, 0);
+ }
+
+ .bottombutton button {
+     cursor: pointer;
+     font-family: 'Inter';
+     font-size: 1.5vw;
+     padding: 1vw;
+     border-radius: 1vw;
+
+ }
+
+ .bottombutton {
+     display: flex;
+     padding-top: 2vw;
+     padding-bottom: 4vw;
+     justify-content: space-around;
+     border: 1vw solid rgba(20, 8, 8, 0);
+
+ }
+
+
+ .bio h1 {
+     padding-left: 4vw;
+ }
+
+ .skills h1 {
+     padding-left: 4vw;
+ }
+
+ .centre h1 {
+     padding-left: 4vw;
+ }
+
+ .trustedCompany h1 {
+     padding-left: 4vw;
+ }
+
+ .centre h2 {
+     padding-left: 4vw;
+ }

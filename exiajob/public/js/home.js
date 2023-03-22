@@ -1,7 +1,7 @@
-const cards = document .querySelectorAll('.card-entreprise');
+// const cards = document .querySelectorAll('.card-entreprise');
 
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        window.location.href = '/';
-    });
-});
+// cards.forEach(card => {
+//     card.addEventListener('click', () => {
+//         window.location.href = '/';
+//     });
+// });

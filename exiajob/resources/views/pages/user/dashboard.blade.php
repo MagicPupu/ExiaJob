@@ -3,96 +3,70 @@
 <link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}">
 
 @section('content')
+<body>
+  <div class="page">
     <div class="box">
       <div class="photoNameAdress">
         <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" id="profilePicture">
         <h0>{{ $user->name }}</h0>
         <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
         <div class="adress">
-            <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">
-            <img src="{{ asset('/images/dashboard/image_48.png') }}" alt="logoMail" id="logoMail">
-            <div class="phoneNumber">{{ $user->phone }}</div>
-            <div class="mailAdress">{{ $user->email }}</div>
+          <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">
+          <img src="{{ asset('/images/dashboard/image_48.png') }}" alt="logoMail" id="logoMail">
+          <div class="phoneNumber">{{ $user->phone }}</div>
+          <div class="mailAdress">{{ $user->email }}</div>
         </div>
       </div>
-      
       <div class="bio">
-        <h1>Description</h1>
+        <h1>Biographie</h1>
         <h3>{{ $user->description }}</h3>
       </div>
-
       <div class="skills">
         <h1>Compétences</h1>
         <div class="multiSmallerBox">
-          <div class="smallerBox">
-            <span class="skillName">Python</span>
-          </div>
-          <div class="smallerBox">
-            <span class="skillName">HTML</span>
-          </div>
-          <div class="smallerBox">
-            <span class="skillName">Figma</span>
-          </div>
-          <div class="addSmallerBox">
-            <span class="add">+</span>
-          </div>
+          <button class="smallerBox">{{ $user->first_skill }}</button>
+          <button class="smallerBox">{{ $user->second_skill}}</button>
+          <button class="smallerBox">{{ $user->third_skill }}</button>
         </div>
       </div>
-
       <div class="centrepromos">
         <div class="centre">
           <h1>Centre</h1>
-          <h2>Bordeaux Cedex</h2>
+          <h2>{{ $user->centre }}</h2>
         </div>
         <div class="assignedPromos">
-          <h1>Promotion assignée(s)</h1>
-          <h2>A2_BTP A3_BTP A4_BTP A1_Généraliste A2_Informatique </h2>
-        </div>
+          <h1>Promotion(s) assignée(s)</h1>
+          <h2>{{ $user->promo }}</h2>
+        </div>  
       </div>
-
       <div class="trustedCompany">
-        <h1>Favoris</h1>
+        <h1>Entreprise confiante</h1>
         <div class="multiBox">
+          @foreach($offers as $offer)
           <div class="boxSmall">
-            <img src="{{ asset('/images/dashboard/logoAmazon.png') }}" alt="companyLogo" id="companyLogo" />
-            <span class="companyName">Amazon</span>
+            <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="companyLogo" id="companyLogo" />
+            <span class="companyName">{{ $offer->name }}</span>
             <div class="stars">
-              <i class="fa fa-star" aria-hidden="true" id="star1"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star2"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star3"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star4"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star5"></i>
+              @for ($i = 0; $i < $offer->rate; $i++)
+                  <i id="etoile1" class="gold fa fa-star" aria-hidden="true"></i>
+              @endfor
+              @for ($i = $offer->rate; $i < 5; $i++)
+                  <i id="etoile1" class="gray fa fa-star" aria-hidden="true"></i>
+              @endfor
             </div>
-            <span class="offerNumber">12 offres</span>
+            <span class="offerNumber">{{ $offer->offers }} offres</span>
           </div>
-
-          <div class="boxSmall">
-            <img src="{{ asset('/images/dashboard/logoAmazon.png') }}" alt="companyLogo" id="companyLogo" />
-            <span class="companyName">Amazon</span>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true" id="star1"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star2"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star3"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star4"></i>
-              <i class="fa fa-star" aria-hidden="true" id="star5"></i>
-            </div>
-            <span class="offerNumber">12 offres</span>
-          </div>
-
+          @endforeach
           <div class="addBoxSmall">
             <span class="add">+</span>
           </div>
         </div>
       </div>
-      <div class="logout">
-        <a href="#" onclick="document.getElementById('logout-form').submit()">
-          <form action="{{ route('logout') }}" method="post" id="logout-form">
-            @csrf
-            <button type="button" id="deco">Déconnexion</button>
-          </form>
-        </a>
+      <div class="bottombutton">
+        <button type="button" id="offre">Poster une offre</button>
+        <button type="button" id="deco">Déconnexion</button>
+        <button type="button" id="etudiants">Ajouter un étudiant</button>
       </div>
     </div>
-  </div>
 </body>
 @endsection
