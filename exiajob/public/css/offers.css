@@ -105,10 +105,10 @@ body {
 }
 
 .offre {
-    width: 70%;
+    width: 100%;
 }
 
-.offre h1 {
+.offres h1 {
     text-indent: 2.5%;
     margin-top: 0;
 }
@@ -136,7 +136,8 @@ body {
     margin-top: 15%;
     width: 70%;
     border-radius: 8px;
-    height: auto;
+    height: 70%;
+    object-fit: cover;
 }
 
 .offre .offre-detail .desc .titre {
@@ -198,7 +199,7 @@ body {
 
 .filter {
     height: min-content;
-    width: 18%;
+    width: 30%;
     background: white;
     border-radius: 8px;
     box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
@@ -300,7 +301,7 @@ input[type="radio"] {
 
 .news {
     background-color: #fff;
-    width: 18%;
+    width: 30%;
     border-radius: 8px;
     box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
     height: min-content;

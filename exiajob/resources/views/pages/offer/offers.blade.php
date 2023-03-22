@@ -90,43 +90,47 @@
                 </div>
             </div>
         </div>
-        
-        <div class="offre">
-            @foreach($offers as $offer)
+
+        <div class="offres">
             <h1 class="number">{{ $offers->count() }} offres</h1>
-            <div class="offre-detail" id="{{ $offer->id }}">
-                <div class="image">
-                    <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="photo">
-                </div>
-                <div class="desc">
-                    <p class="titre">{{ $offer->name }}</p>
-                    <p class="job">{{ $offer->offer_name }}</p>
-                    <div class="detail">
-                        <div class="location">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            <p>{{ $offer->city }}</p>
-                        </div>
-                        <div class="duration">
-                            <i class="fa-regular fa-clock"></i>
-                            <p>{{ $offer->duration }} mois</p>
-                        </div>
-                        <div class="salary">
-                            <img src="{{ asset('images/offers/euro.png') }}" alt="€">
-                            <p>{{ $offer->price }}</p>
-                        </div>
-                        <div class="time">
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>{{ $offer->add_date }}</p>
-                        </div>
+            @foreach($offers as $offer)
+            <div class="offre">
+                <div class="offre-detail" id="{{ $offer->id }}">
+                    <div class="image">
+                        <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="photo">
                     </div>
-                    <p class="description">{{ $offer->description }}</p>
-                </div>
-                @endforeach
-                <div class="save">
-                    <i class="fa-regular fa-bookmark fa-xl"></i>
+                    <div class="desc">
+                        <p class="titre">{{ $offer->name }}</p>
+                        <p class="job">{{ $offer->offer_name }}</p>
+                        <div class="detail">
+                            <div class="location">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                <p>{{ $offer->city }}</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>{{ $offer->duration }} mois</p>
+                            </div>
+                            <div class="salary">
+                                <img src="{{ asset('images/offers/euro.png') }}" alt="€">
+                                <p>{{ $offer->price }}</p>
+                            </div>
+                            <div class="time">
+                                <i class="fa-regular fa-calendar"></i>
+                                <p>{{ $offer->add_date }}</p>
+                            </div>
+                        </div>
+                        <p class="description">{{ $offer->offer_description }}</p>
+                    </div>
+                    
+                    <div class="save">
+                        <i class="fa-regular fa-bookmark fa-xl"></i>
+                    </div>
                 </div>
             </div>
+            @endforeach
         </div>
+
         <div class="news">
             <h2><i class="fa-regular fa-envelope"></i>Newsletter</h2>
             <p>Abonnez-vous pour être tenu au courant des nouvelles offres de stage.</p>
