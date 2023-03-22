@@ -8,6 +8,7 @@ use App\Http\Controllers\OfferController;
 use App\Http\Controllers\CompaniesController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RegisterController;
 
 
 
@@ -19,6 +20,8 @@ Route::get('profile-student', [ProfileController::class, 'student'])->name('prof
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('register', [RegisterController::class, 'index'])->name('register');
 
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
 Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-card');

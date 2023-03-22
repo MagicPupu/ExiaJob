@@ -64,7 +64,9 @@
       </div>
       <div class="bottombutton">
         <button type="button" id="offre">Poster une offre</button>
-        <button type="button" id="etudiants">Ajouter un étudiant</button>
+        <a href="{{ route('register') }}">
+          <button type="button" id="etudiants">Ajouter un étudiant</button>
+        </a>
         <a href="#" onclick="document.getElementById('logout-form').submit()">
           <form action="{{ route('logout') }}" method="post" id="logout-form">
             @csrf
