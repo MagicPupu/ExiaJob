@@ -72,15 +72,16 @@ class ProfileController extends Controller
 
     public function update(Request $request, $id) {
 
-        dd('hello');
-
         $user = User::findOrFail($id);
         $user->description = $request->description;
         $user->cv = $request->cv;
         $user->phone = $request->phone;
 
-        dd($user);
+        $cv = $request->file('cv');
+        $cvName = $cv->getClientOriginalName();
+        $cv->move(public_path('images/cv'), $cvName);
 
+        $user->cv = $cvName;
         $user->update();
 
         return redirect('/')->with('success', 'profil mis à jour');
