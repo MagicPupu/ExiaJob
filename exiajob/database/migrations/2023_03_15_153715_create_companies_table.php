@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer("offers");
             $table->string("image");
             $table->string("link");
+            $table->string("email");
         });
     }
 

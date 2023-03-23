@@ -19,6 +19,7 @@ class CompaniesTableSeeder extends Seeder
         $company->offers = 3;
         $company->image = "mcdo.png";
         $company->link = "https://www.mcdonalds.fr/";
+        $company->email = "mcdo@mail.com";
         $company->save();
 
         $company = new \App\Models\Companies();
@@ -28,6 +29,7 @@ class CompaniesTableSeeder extends Seeder
         $company->offers = 6;
         $company->image = "orange.png";
         $company->link = "https://www.orange.fr/";
+        $company->email = "orange@mail.com";
         $company->save();
 
         $company = new \App\Models\Companies();
@@ -37,6 +39,7 @@ class CompaniesTableSeeder extends Seeder
         $company->offers = 2;
         $company->image = "airbus.jpg";
         $company->link = "https://www.airbus.com/";
+        $company->email = "airbus@mail.com";
         $company->save();
     }
 }

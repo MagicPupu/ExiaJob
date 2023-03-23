@@ -29,6 +29,7 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
 Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-card');
+Route::get('offers/card/{id}/candidate', [OfferController::class, 'candidate'])->name('candidate');
 
 Route::get('companies', [CompaniesController::class, 'index'])->name('companies');
 
