@@ -61,12 +61,10 @@ class CandidateMail extends Mailable
     public function build() {
 
         $user = Auth::user();
-        $mail = $user->email;
-        $cv = $user->cv;
 
-        return $this->from($mail)
+        return $this->from($user->mail)
                     ->subject('Candidature')
                     ->view('pages.emails.mail')
-                    ->attach(public_path('images/cv/'.$cv));
+                    ->attach(public_path('images/cv/'.$user->cv));
     }
 }
