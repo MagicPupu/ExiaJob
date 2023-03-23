@@ -1,0 +1,264 @@
+ .page {
+     background-color: rgba(255, 255, 255, 1);
+     position: relative;
+ }
+
+ .stars {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .box {
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     background-color: rgba(0, 0, 0, 0.019999999552965164);
+     position: relative;
+     margin-left: 2.5%;
+     margin-top: 5%;
+     margin-right: 2.5%;
+     border-radius: 3vw;
+     width: 95%;
+     margin-bottom: 5%;
+
+ }
+
+ .boxSmall {
+     box-shadow: -3px 3px 6px rgba(172.00000494718552, 172.00000494718552, 172.00000494718552, 0.20000000298023224);
+     background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1) 100%);
+     position: relative;
+     border-radius: 2vw;
+     width: 25vw;
+     height: 12.5vw;
+     margin: 2.5%;
+ }
+
+ #companyLogo {
+     width: 4vw;
+     border-radius: 50%;
+     border: 0.125vw solid #000000;
+     position: relative;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     top: -2vw;
+ }
+
+ .companyName {
+     color: rgba(0, 0, 0, 1);
+     height: 2.5vw;
+     position: relative;
+     font-family: Viga;
+     text-align: center;
+     font-size: 1.5vw;
+     letter-spacing: 0.5vw;
+     display: block;
+     margin: auto;
+     top: -1vw
+ }
+
+
+ .multiBox {
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+
+ #star4 {
+     color: gray;
+     font-size: 2vw;
+     position: relative;
+ }
+
+ #star5 {
+     color: gray;
+     font-size: 2vw;
+     position: relative;
+ }
+
+ #star3 {
+     color: rgb(231, 124, 64);
+     font-size: 2vw;
+     position: relative;
+ }
+
+ #star2 {
+     color: rgb(231, 124, 64);
+     font-size: 2vw;
+     position: relative;
+ }
+
+ #star1 {
+     color: rgb(231, 124, 64);
+     font-size: 2vw;
+     position: relative;
+ }
+
+ .offerNumber {
+     color: rgba(35, 166, 240, 1);
+     position: relative;
+     font-family: Plus Jakarta Sans;
+     text-align: center;
+     font-size: 1vw;
+     letter-spacing: 0.125vw;
+     display: block;
+     margin: auto;
+     top: 0.5vw;
+     cursor: pointer;
+ }
+
+ .box h1 {
+     font-family: 'Inter';
+     font-size: 3vw;
+ }
+
+ .box h2 {
+     font-family: 'Inter';
+     width: 261;
+     font-size: 1vw;
+     text-align: justify;
+ }
+
+
+ .smallerBox {
+     height: fit-content;
+     background: #EFEFEF;
+     border-radius: 4vw;
+     margin-top: 1vw;
+     margin-left: 2vw;
+
+ }
+
+ .multiSmallerBox {
+
+     position: relative;
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: start;
+     align-items: center;
+     justify-items: center;
+     overflow: visible;
+ }
+
+ .bio {
+     padding-top: 2.5%;
+ }
+
+ .bio h3 {
+     font-family: 'Inter';
+     font-weight: 500;
+     font-size: 2vw;
+     text-align: justify;
+     padding-left: 3vw;
+     padding-right: 2.5%;
+     color: #6C6C6C;
+ }
+
+ .centrepromos {
+     display: grid;
+     grid-template-columns: 25% 25%;
+     grid-auto-flow: column;
+ }
+
+ #profilePicture {
+     height: 10vw;
+     border-radius: 50%;
+     border: 1px solid #000000;
+     position: relative;
+     display: block;
+     margin-left: 30%;
+     margin-top: 20%;
+     cursor: pointer;
+ }
+
+ .photoNameAdress {
+     display: grid;
+     grid-template-columns: 20% 45% 35%;
+     grid-auto-flow: column;
+     align-items: baseline;
+     grid-template-rows: 40%;
+ }
+
+ .box h0 {
+     font-family: 'DM Sans';
+     font-size: 4vw;
+     line-height: 150%;
+     margin-top: 30%;
+ }
+
+
+ .adress {
+     position: relative;
+     display: grid;
+     grid-template-rows: 4vw 4vw;
+     grid-auto-flow: column;
+     grid-template-columns: 4vw 27vw;
+     top: -20%;
+ }
+
+ #logoTel {
+     width: 2vw;
+     padding: 1vw;
+ }
+
+ #logomail {
+     width: 2vw;
+     padding: 1vw;
+ }
+
+ .phoneNumber {
+     font-family: 'Nunito Sans';
+     font-size: 2vw;
+     padding: 1vw;
+ }
+
+ .mailAdress {
+     font-family: 'Nunito Sans';
+     font-size: 2vw;
+     padding: 1vw;
+ }
+
+ .multiSmallerBox button {
+     cursor: pointer;
+     width: fit-content;
+     min-width: 10vw;
+     font-family: 'Inter';
+     font-weight: 500;
+     font-size: 1.5vw;
+     display: flex;
+     align-items: center;
+     color: #656565;
+     flex-wrap: nowrap;
+     justify-content: center;
+     padding-left: 1vw;
+     padding-right: 1vw;
+     border: 1vw solid rgba(255, 255, 255, 0);
+ }
+
+ .bio h1 {
+     padding-left: 4vw;
+ }
+
+ .skills h1 {
+     padding-left: 4vw;
+ }
+
+ .centre h1 {
+     padding-left: 4vw;
+ }
+
+ .trustedCompany h1 {
+     padding-left: 4vw;
+ }
+
+ .centre h2 {
+     padding-left: 4vw;
+ }
+
+.gold {
+    color: gold;
+}
+
+.gray {
+    color: gray;
+}

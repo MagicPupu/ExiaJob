@@ -23,7 +23,7 @@
     <div class="box-pilot">
       @foreach($pilots as $pilot)
       <div class="container-pilot">
-        <div class="card-pilot">
+        <div class="card-pilot" id="{{ $pilot->id }}">
           <div class="front-pilot">
             <div class="front-content-pilot">
               <img src="{{ asset('/images/profile_pictures/'.$pilot->image) }}" alt="photo" />
@@ -42,6 +42,9 @@
     <br>
     <br>
   </main>
+
+  <script src="{{ asset('/js/pilots.js') }}"></script>
+
   <footer>
 
   </footer>

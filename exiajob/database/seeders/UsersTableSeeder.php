@@ -86,5 +86,20 @@ class UsersTableSeeder extends Seeder
         $user->third_skill = "Tuteur";
         $user->status = "pilot";
         $user->save();
+
+        $user = new \App\Models\User();
+        $user->name = "test";
+        $user->email = "test@gmail.com";
+        $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
+        $user->phone = '0123456789';
+        $user->image = "test";
+        $user->description = "test";
+        $user->centre = "test";
+        $user->promo = "test";
+        $user->first_skill = "test";
+        $user->second_skill = "test";
+        $user->third_skill = "test";
+        $user->status = "pilot";
+        $user->save();
     }
 }
