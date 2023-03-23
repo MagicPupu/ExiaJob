@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Candidature</h1>
+    <h3>Candidature pour l'offre : {{ $offer->offer_name }}</h3>
+    <p>
+        Madame, Monsieur,<br>
+        Je vous présente ma candidature pour l'offre de stage {{ $offer->offer_name }}.<br>
+        Je vous remercie par avance de la considération que vous porterez à ma candidature,<br>
+        <br>
+        Cordialement,<br>
+        {{ $user->name }}
+    </p>
 </body>
 </html>

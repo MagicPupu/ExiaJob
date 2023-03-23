@@ -9,3 +9,13 @@ function Toggle() {
         btn.classList.add("far");
     }
 }
+
+
+const postuler = document.querySelector('.postuler');
+const id = postuler.getAttribute("id");
+
+console.log(id);
+
+postuler.addEventListener('click', () => {
+    window.location.href = '/offers/candidate/'+id;
+})

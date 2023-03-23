@@ -76,7 +76,7 @@
 
             </div>
             <div class="post">
-                <button>Postuler</button>
+                <input class="postuler" id="{{ $offer->id }}" type="button" value="Postuler" name="candidate">
             </div>
         </div>
         @endforeach

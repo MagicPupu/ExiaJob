@@ -14,7 +14,8 @@ class CandidateMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $data = [];
+    public $user = [];
+    public $offer = [];
 
     /**
      * Create a new message instance.
@@ -23,6 +24,7 @@ class CandidateMail extends Mailable
     {
         $this->user = $user;
         $this->offer = $offer;
+
     }
 
     // /**
@@ -59,10 +61,12 @@ class CandidateMail extends Mailable
     public function build() {
 
         $user = Auth::user();
+        $mail = $user->email;
+        $cv = $user->cv;
 
-        return $this->from($user->email)
+        return $this->from($mail)
                     ->subject('Candidature')
                     ->view('pages.emails.mail')
-                    ->attach(public_path('images/cv/'.$user->cv));
+                    ->attach(public_path('images/cv/'.$cv));
     }
 }

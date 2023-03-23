@@ -44,6 +44,6 @@ class OfferController extends Controller
 
         Mail::to($offer[0]->email)->send(new CandidateMail($user, $offer[0]));
 
-        return back()->with('candidature envoyée');
+        return redirect('/offers')->with('candidature envoyée');
     }
 }
