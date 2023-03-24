@@ -32,6 +32,7 @@ Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-ca
 Route::get('offers/candidate/{id}', [OfferController::class, 'candidate'])->name('candidate')->middleware('auth');
 
 Route::get('companies', [CompaniesController::class, 'index'])->name('companies');
+Route::get('companies/card/{id}', [CompaniesController::class, 'card_company'])->name('card-company');
 
 Route::get('students', [UsersController::class, 'students'])->name('students');
 Route::get('pilots', [UsersController::class, 'pilots'])->name('pilots');

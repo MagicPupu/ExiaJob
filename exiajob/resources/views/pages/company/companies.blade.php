@@ -24,7 +24,7 @@
     <div class="box-entreprise">
       @foreach ($companies as $company)
       <div class="container-entreprise">
-        <div class="card-entreprise">
+        <div class="card-entreprise" id="{{ $company->id }}">
           <div class="front-entreprise">
             <div class="front-content-entreprise">
               <img src="{{ asset('/images/company_pictures/'.$company->image) }}" alt="photo" />
