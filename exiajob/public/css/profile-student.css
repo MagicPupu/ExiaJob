@@ -1,0 +1,225 @@
+ .page {
+     background-color: rgba(255, 255, 255, 1);
+     position: relative;
+ }
+
+ .stars {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .box {
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     background-color: rgba(0, 0, 0, 0.019999999552965164);
+     position: relative;
+     margin-left: 2.5%;
+     margin-top: 5%;
+     margin-right: 2.5%;
+     border-radius: 3vw;
+     width: 95%;
+     margin-bottom: 5%;
+
+ }
+
+ .box h1 {
+     font-family: 'Inter';
+     font-size: 3vw;
+ }
+
+ .box h2 {
+     font-family: 'Inter';
+     width: 261;
+     font-size: 1vw;
+     text-align: justify;
+ }
+
+
+ .smallerBox {
+     height: fit-content;
+     background: #EFEFEF;
+     border-radius: 4vw;
+     margin-top: 1vw;
+     margin-left: 2vw;
+
+ }
+
+ .multiSmallerBox {
+
+     position: relative;
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: start;
+     align-items: center;
+     justify-items: center;
+     overflow: visible;
+ }
+
+ .bio {
+     padding-top: 2.5%;
+ }
+
+ .bio h3 {
+     font-family: 'Inter';
+     font-weight: 500;
+     font-size: 2vw;
+     text-align: justify;
+     padding-left: 3vw;
+     padding-right: 2.5%;
+     color: #6C6C6C;
+ }
+
+ .centrepromos {
+     display: grid;
+     grid-template-columns: 25% 25%;
+     grid-auto-flow: column;
+ }
+
+ #profilePicture {
+     height: 10vw;
+     border-radius: 50%;
+     border: 1px solid #000000;
+     position: relative;
+     display: block;
+     margin-left: 30%;
+     margin-top: 20%;
+     cursor: pointer;
+ }
+
+ .photoNameAdress {
+     display: grid;
+     grid-template-columns: 20% 20% 25% 35%;
+     grid-auto-flow: column;
+     align-items: baseline;
+     grid-template-rows: 40%;
+ }
+
+ .box h0 {
+     font-family: 'DM Sans';
+     font-size: 4vw;
+     line-height: 150%;
+     margin-top: 30%;
+ }
+
+ #edit {
+     width: 4vw;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+     cursor: pointer;
+
+ }
+
+ .adress {
+     position: relative;
+     display: grid;
+     grid-template-rows: 4vw 4vw;
+     grid-auto-flow: column;
+     grid-template-columns: 4vw 27vw;
+     top: -20%;
+ }
+
+ #logoTel {
+     width: 2vw;
+     padding: 1vw;
+ }
+
+ #logomail {
+     width: 2vw;
+     padding: 1vw;
+ }
+
+ .phoneNumber {
+     font-family: 'Nunito Sans';
+     font-size: 2vw;
+     padding: 1vw;
+ }
+
+ .mailAdress {
+     font-family: 'Nunito Sans';
+     font-size: 2vw;
+     padding: 1vw;
+ }
+
+ .offredeco {
+     padding-top: 5%;
+     padding-bottom: 5%;
+     width: 100%;
+     display: inline-flex;
+     justify-content: space-around;
+ }
+
+
+ .multiSmallerBox button {
+     cursor: pointer;
+     width: fit-content;
+     min-width: 10vw;
+     font-family: 'Inter';
+     font-weight: 500;
+     font-size: 1.5vw;
+     display: flex;
+     align-items: center;
+     color: #656565;
+     flex-wrap: nowrap;
+     justify-content: center;
+     padding-left: 1vw;
+     padding-right: 1vw;
+     border: 1vw solid rgba(255, 255, 255, 0);
+ }
+
+ .bottombutton button {
+     cursor: pointer;
+     font-family: 'Inter';
+     font-size: 1.5vw;
+     padding: 1vw;
+     border-radius: 1vw;
+     margin: 2vw;
+     border: 0.15vw solid rgb(20 8 8);
+ }
+
+ .bottombutton a {
+     cursor: pointer;
+     font-family: 'Inter';
+     font-size: 1.5vw;
+ }
+
+ .bottombutton {
+     display: flex;
+     padding-top: 2vw;
+     padding-bottom: 4vw;
+     justify-content: space-around;
+     border: 1vw solid rgba(20, 8, 8, 0);
+
+ }
+
+
+ .bio h1 {
+     padding-left: 4vw;
+ }
+
+ .skills h1 {
+     padding-left: 4vw;
+ }
+
+ .centre h1 {
+     padding-left: 4vw;
+ }
+
+ .centre h2 {
+     padding-left: 4vw;
+ }
+
+  .bottombutton button {
+      cursor: pointer;
+      font-family: 'Inter';
+      font-size: 1.5vw;
+      padding: 1vw;
+      border-radius: 1vw;
+
+  }
+
+  .bottombutton {
+      display: flex;
+      padding-top: 2vw;
+      padding-bottom: 4vw;
+      justify-content: space-around;
+      border: 1vw solid rgba(20, 8, 8, 0);
+  }

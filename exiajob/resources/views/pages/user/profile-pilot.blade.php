@@ -1,6 +1,6 @@
 @extends('layout')
 
-<link rel="stylesheet" href="{{ asset('/css/profile.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/profile-pilot.css') }}">
 
 @section('content')
 <body>
