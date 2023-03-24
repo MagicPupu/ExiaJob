@@ -36,3 +36,4 @@ Route::get('companies', [CompaniesController::class, 'index'])->name('companies'
 Route::get('students', [UsersController::class, 'students'])->name('students');
 Route::get('pilots', [UsersController::class, 'pilots'])->name('pilots');
 Route::get('pilots/card/{id}', [UsersController::class, 'card_pilot'])->name('card-pilot');
+Route::get('students/card/{is}', [UsersController::class, 'card_student'])->name('card-student');

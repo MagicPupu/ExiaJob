@@ -26,9 +26,9 @@ class UsersController extends Controller
     public function card_pilot($id) {
 
         $pilot_array = User::findOrFail($id)
-                    ->where('id', $id)
-                    ->where('status', 'pilot')
-                    ->get();
+                        ->where('id', $id)
+                        ->where('status', 'pilot')
+                        ->get();
         
         $offers = Offer::join('companies', 'offers.idCompany', '=', 'companies.id')
                     ->select('offers.*', 'companies.*')
@@ -37,5 +37,17 @@ class UsersController extends Controller
         $pilot = $pilot_array[0];
 
         return view('pages.user.card-pilot', compact('pilot', 'offers'));
+    }
+
+    public function card_student($id) {
+
+        $student_array = User::findOrFail($id)
+                            ->where('id', $id)
+                            ->where('status', 'student')
+                            ->get();
+
+        $student = $student_array[0];
+
+        return view('pages.user.card-student', compact('student'));
     }
 }

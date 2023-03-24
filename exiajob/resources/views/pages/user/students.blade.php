@@ -24,7 +24,7 @@
     <div class="box-etudiant">
       @foreach($students as $student)
       <div class="container-etudiant">
-        <div class="card-etudiant">
+        <div class="card-etudiant" id="{{ $student->id }}">
           <div class="front-etudiant">
             <div class="front-content-etudiant">
               <img src="{{ asset('/images/profile_pictures/'.$student->image) }}" alt="photo" />
@@ -43,6 +43,9 @@
     <br>
     <br>
   </main>
+
+  <script src="{{ asset('/js/students.js') }}"></script>
+
   <footer>
 
   </footer>
