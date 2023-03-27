@@ -37,4 +37,5 @@ Route::get('companies/card/{id}', [CompaniesController::class, 'card_company'])-
 Route::get('students', [UsersController::class, 'students'])->name('students');
 Route::get('pilots', [UsersController::class, 'pilots'])->name('pilots');
 Route::get('pilots/card/{id}', [UsersController::class, 'card_pilot'])->name('card-pilot');
-Route::get('students/card/{is}', [UsersController::class, 'card_student'])->name('card-student');
+Route::get('students/card/{id}', [UsersController::class, 'card_student'])->name('card-student');
+Route::delete('students/card/{id}', [UsersController::class, 'destroy_student'])->name('destroy-student');

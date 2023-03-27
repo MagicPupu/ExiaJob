@@ -50,4 +50,11 @@ class UsersController extends Controller
 
         return view('pages.user.card-student', compact('student'));
     }
+
+    public function destroy_student($id) {
+        
+        User::findOrFail($id)->delete();
+
+        return redirect('/students');
+    }
 }
