@@ -10,11 +10,8 @@
           <p>Trouvez le stage <br> de vos <span style="color:#FCB4B5">rêves 🏝️</span></p>
         </div>
         <br>
-        <br>
         <div class="para1">
-          <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo<br>
-            casu idem Gallus de futuris incertus agitare quaedam conducentia salutisuae per itinera conaretur,
-            remoti sunt omnes de industria milites agentes in civitatibus perviis.</p>
+          <p>Trouvez facilement et rapidement des stages qui correspondent à vos besoins. Notre site est facile à naviguer et vous pouvez trier vos recherches de stage en fonction de différents critères, tels que la ville, l'entreprise, et bien plus encore.</p>
         </div>
         <!--Offres recents-->
         <div class="offres">
@@ -47,7 +44,6 @@
             <div class="entreprise-content">
               <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="entreprise-photo" />
               <h2>{{ $offer->name }}</h2>
-              <p>{{ $offer->description }}</p>
               <div class="more"><a href="offers/card/{{ $offer->id }}">Voir plus</a></div>
             </div>
           </div>
@@ -55,10 +51,8 @@
       </div>
       @endforeach
     </div>
-    <div class="more-entreprise"><a href="{{ route('companies') }}" class="more-entreprise">Voir les différentes entreprises</a></div>
+    <div class="more-entreprise"><a href="{{ route('companies') }}" class="more-entreprise">Voir les entreprises</a></div>
     <h1 id="entreprises-h1">Entreprises</h1>
-    <p id="sous-entreprises">Penasaran apa saja review dari pengguna yang memakai aplikasi dan website Destinize buat
-      <br> nentuin kemana liburan mereka selanjutnya? Yuk cek dibawah!</p>
 
 
 
@@ -70,7 +64,6 @@
           <div class="front-entreprise">
             <div class="front-content-entreprise">
               <img src="{{ asset('/images/company_pictures/'.$company->image) }}" alt="photo" />
-              <p>{{ $company->description }}</p>
               <div class="etoiles">
                 @for ($i = 0; $i < $company->rate; $i++)
                     <i class="gold fa fa-star" aria-hidden="true"></i>
@@ -100,7 +93,6 @@
                     <div class="front-content-etudiant">
                         <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" />
                         <h1>{{ $user->name }}</h1>
-                        <p>{{ $user->description }}</p>
                         <h2>{{ $user->promo }}</h2>
                         <p>{{ $user->skills }}</p>
                     </div>

@@ -72,12 +72,14 @@ body {
 
 .offre .offre-detail .desc .titre {
     font-size: 18px;
+    text-align: left;
 }
 
 .offre .offre-detail .desc .job {
     font-size: 24px;
     font-weight: 700;
     line-height: 0;
+    text-align: left;
 }
 
 .offre .offre-detail .desc .detail {
@@ -118,11 +120,4 @@ body {
     opacity: 0.7;
     width: 90%;
     text-align: justify;
-}
-
-.offre .offre-detail .save {
-    color: #141414;
-    opacity: 0.7;
-    margin-top: 20px;
-    margin-right: 20px;
 }

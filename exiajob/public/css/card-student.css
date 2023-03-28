@@ -94,6 +94,11 @@
      grid-template-rows: 40%;
  }
 
+ .photoNameAdress img {
+    width: 50%;
+    object-fit: cover;
+ }
+
  .box h0 {
      font-family: 'DM Sans';
      font-size: 4vw;
@@ -107,7 +112,6 @@
      grid-template-rows: 4vw 4vw;
      grid-auto-flow: column;
      grid-template-columns: 4vw 27vw;
-     top: -20%;
  }
 
  #logoTel {

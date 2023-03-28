@@ -13,12 +13,12 @@ class UsersTableSeeder extends Seeder
     public function run(): void
     {
         $user = new \App\Models\User();
-        $user->name = "Don Leon";
+        $user->name = "Léon De Fonrocque";
         $user->email = "don.leon@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0656321475';
-        $user->image = "homme1.png";
-        $user->description = "Je suis un développeur hors pair : Léon-Maker";
+        $user->image = "leondefronrocque.png";
+        $user->description = "Actuellement en 2ème année en classe préparatoire intégrée dans une école d’ingénieur, je recherche un stage en milieu professionnel pour une durée d’environ 3 mois, de début avril à mi-juillet.";
         $user->centre = "Bordeaux";
         $user->promo = "CPI A2 Info";
         $user->first_skill = "Développement Web";
@@ -28,12 +28,12 @@ class UsersTableSeeder extends Seeder
         $user->save();
 
         $user = new \App\Models\User();
-        $user->name = "Le J";
+        $user->name = "Julien Gaborieau";
         $user->email = "le.j@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0675841258';
-        $user->image = "homme2.png";
-        $user->description = "Face It level 10, dev front end et souleveur de prof d'anglais";
+        $user->image = "juliengaborieau.png";
+        $user->description = "En deuxième année de cycle préparatoire ingénieur mineure informatique à CESI Bordeaux. Je suis intéressé par les domaines de développement logiciel, intelligence artificielle et cybersécurité";
         $user->centre = "Bordeaux";
         $user->promo = "CPI A2 Info";
         $user->first_skill = "Développement Objet";
@@ -43,32 +43,32 @@ class UsersTableSeeder extends Seeder
         $user->save();
 
         $user = new \App\Models\User();
-        $user->name = "Magic_Pupu";
+        $user->name = "Antoine Pulon";
         $user->email = "magic.pupu@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0649751023';
-        $user->image = "homme3.png";
-        $user->description = "El big râleur, dev back end";
+        $user->image = "antoinepulon.png";
+        $user->description = "Actuellement en deuxième année d'école d'ingénieur informatique, je suis intéressé par la cybersécurité.";
         $user->centre = "Bordeaux";
-        $user->promo = "CPI A1";
-        $user->first_skill = "Wordpress";
-        $user->second_skill = "HTML";
-        $user->third_skill = "CSS";
+        $user->promo = "CPI A2 Info";
+        $user->first_skill = "Laravel";
+        $user->second_skill = "PHP";
+        $user->third_skill = "Python";
         $user->status = "student";
         $user->save();
 
         $user = new \App\Models\User();
-        $user->name = "Joe Biden";
+        $user->name = "Roméo Boesh";
         $user->email = "joe.biden@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0625741586';
-        $user->image = "joebiden.png";
-        $user->description = "président des usa";
+        $user->image = "romeoboesh.png";
+        $user->description = "Étudiant en informatique à CESI Bordeaux.";
         $user->centre = "Bordeaux";
-        $user->promo = "CPI A3 Généraliste";
-        $user->first_skill = "Présidence";
-        $user->second_skill = "Entrepreunariat";
-        $user->third_skill = "Click on the red button";
+        $user->promo = "CPI A2 Info";
+        $user->first_skill = "Figma";
+        $user->second_skill = "Frontend";
+        $user->third_skill = "HTML/CSS";
         $user->status = "student";
         $user->save();
 
@@ -81,24 +81,24 @@ class UsersTableSeeder extends Seeder
         $user->description = "Pilote des A2 2023 à Bordeaux";
         $user->centre = "Bordeaux";
         $user->promo = "CPI A1, CPI A2 Info, CPI A3 Info";
-        $user->first_skill = "Mettre des fec";
+        $user->first_skill = "Développement web";
         $user->second_skill = "Développement objet";
         $user->third_skill = "Tuteur";
         $user->status = "pilot";
         $user->save();
 
         $user = new \App\Models\User();
-        $user->name = "test";
-        $user->email = "test@gmail.com";
+        $user->name = "Zeineb El Khalfi";
+        $user->email = "zeineb.elkhalfi@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
-        $user->phone = '0123456789';
-        $user->image = "test";
-        $user->description = "test";
-        $user->centre = "test";
-        $user->promo = "test";
-        $user->first_skill = "test";
-        $user->second_skill = "test";
-        $user->third_skill = "test";
+        $user->phone = '0656324875';
+        $user->image = "zeinebelkhalfi.png";
+        $user->description = "Tuteur, chercheur à CESI Bordeaux.";
+        $user->centre = "Bordeaux";
+        $user->promo = "Aucune";
+        $user->first_skill = "Développement web";
+        $user->second_skill = "HTML";
+        $user->third_skill = "JS";
         $user->status = "pilot";
         $user->save();
     }

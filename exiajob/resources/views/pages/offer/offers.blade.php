@@ -36,11 +36,6 @@
                                 <p>{{ $offer->add_date }}</p>
                             </div>
                         </div>
-                        <p class="description">{{ $offer->offer_description }}</p>
-                    </div>
-                    
-                    <div class="save">
-                        <i class="fa-regular fa-bookmark fa-xl"></i>
                     </div>
                 </div>
             </div>

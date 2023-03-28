@@ -21,10 +21,10 @@
       </div>
       </div>
       <div class="bio">
-        <h1>{{ $company->description }}</h3>
+        <h3>{{ $company->description }}</h3>
       </div>
       <div class="Offres">
-        <h1>Offres en cours</h1>
+        <h2>Offres en cours</h2>
         <ul>
           @foreach($offers as $offer)
             <li><a href="{{ url('/offers/card/'.$offer->id) }}">{{ $offer->offer_name }}</a></li>

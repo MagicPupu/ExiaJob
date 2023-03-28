@@ -18,6 +18,7 @@
      margin-right: 2.5%;
      border-radius: 3vw;
      width: 95%;
+     height: auto;
      margin-bottom: 5%;
 
  }
@@ -193,7 +194,6 @@
      grid-template-rows: 4vw 4vw;
      grid-auto-flow: column;
      grid-template-columns: 4vw 27vw;
-     top: -20%;
  }
 
  #logoTel {
@@ -244,10 +244,6 @@
  }
 
  .centre h1 {
-     padding-left: 4vw;
- }
-
- .trustedCompany h1 {
      padding-left: 4vw;
  }
 

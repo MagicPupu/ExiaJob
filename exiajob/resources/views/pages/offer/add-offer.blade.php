@@ -20,7 +20,7 @@
                 <p id="cnt"></p>
             </div>
 
-            <h2>Choisissez jusqu'à trois compétences:</h2>
+            <h2>Choisissez trois compétences:</h2>
             <div id="skill-form">
                 <div class="skill-container">
                     <h2>Compétences 1:</h2>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="dure">
                     <div>
-                        <h2><i class="fa-regular fa-calendar"></i>Durée</h2>
+                        <h2><i class="fa-regular fa-calendar"></i>Durée (mois)</h2>
                     </div>
                     <div class="search-box">
                         <input type="text" name="duration" placeholder="Dates">

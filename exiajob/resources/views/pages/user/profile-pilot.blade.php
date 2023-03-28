@@ -41,29 +41,6 @@
           <h2>{{ $user->promo }}</h2>
         </div>  
       </div>
-      <div class="trustedCompany">
-        <h1>Entreprise confiante</h1>
-        <div class="multiBox">
-          @foreach($offers as $offer)
-          <div class="boxSmall">
-            <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="companyLogo" id="companyLogo" />
-            <span class="companyName">{{ $offer->name }}</span>
-            <div class="stars">
-              @for ($i = 0; $i < $offer->rate; $i++)
-                  <i id="etoile1" class="gold fa fa-star" aria-hidden="true"></i>
-              @endfor
-              @for ($i = $offer->rate; $i < 5; $i++)
-                  <i id="etoile1" class="gray fa fa-star" aria-hidden="true"></i>
-              @endfor
-            </div>
-            <span class="offerNumber">{{ $offer->offers }} offres</span>
-          </div>
-          @endforeach
-          <div class="addBoxSmall">
-            <span class="add">+</span>
-          </div>
-        </div>
-      </div>
       <div class="bottombutton">
         <a href="{{ route('add-offer') }}">
           <button type="button" id="offre">Poster une offre</button>

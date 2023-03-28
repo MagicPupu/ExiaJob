@@ -13,7 +13,7 @@
      border-radius: 3vw;
      width: 95%;
      margin-bottom: 5%;
-
+     height: auto;
  }
 
 
@@ -77,6 +77,11 @@
      align-items: center;
  }
 
+ .photoName img {
+    width: 45%;
+    object-fit: cover;
+ }
+
  .box h0 {
      font-family: 'DM Sans';
      font-size: 4vw;
@@ -93,7 +98,7 @@
      padding-left: 4vw;
  }
 
- .Offres h1 {
+ .Offres h2 {
      padding-left: 4vw;
  }
 
@@ -124,6 +129,7 @@
      cursor: pointer;
      font-family: 'Inter';
      font-size: 1.5vw;
+     padding-left: 3vw;
  }
 
  .trustedPilotes a {

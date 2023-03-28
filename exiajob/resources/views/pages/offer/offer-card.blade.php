@@ -22,9 +22,6 @@
                     </div>
                 </div>
             </div>
-            <div class="save">
-                <i onclick="Toggle()" id="btn" class="far fa-bookmark fa-xl"></i>
-            </div>
         </div>  
         <div class="descr">
             <h2>Description</h2>
@@ -60,7 +57,9 @@
                 <a href="{{ $offer->link }}">{{ $offer->name }}</a>
             </div>
             <div class="post">
-                <input class="postuler" id="{{ $offer->id }}" type="button" value="Postuler" name="candidate">
+                @if (Auth::user()->status == 'student')
+                    <input class="postuler" id="{{ $offer->id }}" type="button" value="Postuler" name="candidate">
+                @endif
             </div>
         </div>
 
