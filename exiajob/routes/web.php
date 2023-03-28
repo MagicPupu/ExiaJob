@@ -9,6 +9,7 @@ use App\Http\Controllers\CompaniesController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SearchController;
 
 
 
@@ -39,3 +40,5 @@ Route::get('pilots', [UsersController::class, 'pilots'])->name('pilots');
 Route::get('pilots/card/{id}', [UsersController::class, 'card_pilot'])->name('card-pilot');
 Route::get('students/card/{id}', [UsersController::class, 'card_student'])->name('card-student');
 Route::delete('students/card/{id}', [UsersController::class, 'destroy_student'])->name('destroy-student');
+
+Route::get('search', [SearchController::class, 'index'])->name('search');

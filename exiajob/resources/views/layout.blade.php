@@ -38,8 +38,10 @@
       </a>
     </div>
     <div class="search-bar">
-      <span class="search-icon"><i class="fas fa-search"></i></span>
-      <input id="search" type="text" placeholder="Recherche...">
+      <form action="{{ route('search') }}" method="get">
+        <input id="search" name="query" type="text" placeholder="Recherche...">
+        <span class="search-icon"><button type="submit"><i class="fas fa-search"></i></button></span>
+      </form>
     </div>
     <nav>
       <ul class="snip1198">
