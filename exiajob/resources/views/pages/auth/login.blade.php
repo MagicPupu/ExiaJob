@@ -45,21 +45,9 @@
                     <p id="texte-bas">Vous n'avez pas de compte, <span id="texte-bas-bleu">demandez à votre tuteur</span></p>
                 </div>
             </div>
-
-
-            <script>
-                const togglePasswordButton = document.getElementById('show-password');
-                const passwordInput = document.getElementById('password');
-
-                togglePasswordButton.addEventListener('click', () => {
-                    const passwordVisible = togglePasswordButton.classList.toggle('password-visible');
-                    const toggleIcon = togglePasswordButton.querySelector('.toggle-icon');
-                    const toggleIconHidden = togglePasswordButton.querySelector('.toggle-icon-hidden');
-                    toggleIcon.style.display = passwordVisible ? 'none' : 'inline-block';
-                    toggleIconHidden.style.display = passwordVisible ? 'inline-block' : 'none';
-                    passwordInput.type = passwordVisible ? 'text' : 'password';
-                });
-            </script>
         </main>
+
+        <script src="{{ asset('/js/login.js') }}"></script>
+
     </body>
 @endsection

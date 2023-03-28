@@ -53,7 +53,7 @@ class OfferController extends Controller
 
     public function add_offer() {
 
-        if (Auth::check() && Auth::user()->status == 'pilot') {
+        if (Auth::check() && Auth::user()->status == 'pilot' or 'admin') {
             return view('pages.offer.add-offer');
         } else {
             abort(403);

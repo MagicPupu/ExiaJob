@@ -77,6 +77,8 @@
   
   @yield('content')
 
+  <script src="{{ asset('/js/layout.js') }}"></script>
+
   <footer>
     <p>© 2023 Groupe 1 A2 info All rights reserved.</p>
     <p><a href="mailto:julgaborieau@gmail.com?subject=HTML link">contact us</a></p>

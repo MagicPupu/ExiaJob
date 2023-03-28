@@ -35,7 +35,7 @@ class ProfileController extends Controller
 
     public function register() {
 
-        if (Auth::check() && Auth::user()->status == 'pilot') {
+        if (Auth::check() && Auth::user()->status == 'pilot' or 'admin') {
             return view('pages.auth.register');
         } else {
             abort(403);
