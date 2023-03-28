@@ -31,15 +31,6 @@
           @endforeach
         </ul>
       </div>
-      <div class="trustedPilotes">
-          <h1>Confiance de(s) pilote(s)</h1>
-          <ul>
-            <li> <a href="https://urlz.fr/l6U2">Rocher Tatiana</a>  </li>
-            <li> <a href="https://urlz.fr/l6U2">moi</a></li>
-            <li> <a href="https://urlz.fr/l6U2">Personne</a></li>
-            <li> <a href="https://urlz.fr/l6U2">Julien </a></li>
-          </ul>
-      </div>
     </div>
 </body>
 @endsection

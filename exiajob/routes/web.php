@@ -31,6 +31,9 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
 Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-card');
 Route::get('offers/candidate/{id}', [OfferController::class, 'candidate'])->name('candidate')->middleware('auth');
+Route::get('offers/create', [OfferController::class, 'add_offer'])->name('add-offer');
+Route::post('offers/create', [OfferController::class, 'store'])->name('store-offer');
+Route::delete('offers/card/{id}', [OfferController::class, 'destroy_offer'])->name('destroy-offer');
 
 Route::get('companies', [CompaniesController::class, 'index'])->name('companies');
 Route::get('companies/card/{id}', [CompaniesController::class, 'card_company'])->name('card-company');

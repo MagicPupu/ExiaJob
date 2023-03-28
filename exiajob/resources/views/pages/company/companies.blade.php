@@ -37,7 +37,6 @@
                     <i id="etoile1" class="gray fa fa-star" aria-hidden="true"></i>
                 @endfor
               </div>
-              <div class="front-content-entreprise-more">{{ $company->offers }} offres</a></div>
               <h2>{{ $company->name }}</h2>
             </div>
           </div>

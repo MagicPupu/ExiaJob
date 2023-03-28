@@ -5,7 +5,6 @@
 @section('content')
 <body>
     <div class="offre-detail">
-        @foreach($offers as $offer)
         <div class="headd">
             <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="mcdo">
             <div class="desc">
@@ -58,28 +57,25 @@
                 <p>{{ $offer->description }}</p>
             </div>
             <div class="app">
-                <div class="pi">
-                    <p><i class="fa-solid fa-circle-check"></i>Approuvé par un Pilote</p>
-                    <ul>
-                        <li>Tatiana</li>
-                        <li>zeineb</li>
-                    </ul>
-                </div>
-                <div class="fini">
-                    <p><i class="fa-solid fa-circle-check"></i>Stages terminés</p>
-                    <ul>
-                        <li>André Paul</li>
-                        <li>James Bond</li>
-                    </ul>
-                </div>
                 <a href="{{ $offer->link }}">{{ $offer->name }}</a>
-
             </div>
             <div class="post">
                 <input class="postuler" id="{{ $offer->id }}" type="button" value="Postuler" name="candidate">
             </div>
         </div>
-        @endforeach
+
+        <div class="bottombutton">
+        @auth
+          @if (Auth::user()->status == 'pilot')
+            <form action="{{ route('destroy-offer', $offer->id) }}" method="post">
+              @csrf
+              @method('DELETE')
+              <button type="submit">Supprimer</button>
+            </form>
+          @endif
+        @endauth
+      </div>
+
     </div>
 </body>
 

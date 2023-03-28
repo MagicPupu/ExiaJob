@@ -65,7 +65,9 @@
         </div>
       </div>
       <div class="bottombutton">
-        <button type="button" id="offre">Poster une offre</button>
+        <a href="{{ route('add-offer') }}">
+          <button type="button" id="offre">Poster une offre</button>
+        </a>
         <a href="{{ route('register-student') }}">
           <button type="button" id="etudiants">Ajouter un étudiant</button>
         </a>

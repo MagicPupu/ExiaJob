@@ -40,13 +40,12 @@
     </div>
 
     <div class="box-recent">
-      @foreach ($offers as $offer)
+      @foreach ($last_4_offers as $offer)
       <div class="entreprise">
         <div class="entreprise-card">
           <div class="entreprise-front">
             <div class="entreprise-content">
               <img src="{{ asset('/images/company_pictures/'.$offer->image) }}" alt="entreprise-photo" />
-              <h1>{{ $offer->name }}</h1>
               <h2>{{ $offer->name }}</h2>
               <p>{{ $offer->description }}</p>
               <div class="more"><a href="offers/card/{{ $offer->id }}">Voir plus</a></div>
@@ -65,9 +64,9 @@
 
     <!--box entreprise-->
     <div class="box-entreprise">
-      @foreach ($companies as $company)
+      @foreach ($best_rated_companies as $company)
       <div class="container-entreprise">
-        <div class="card-entreprise">
+        <div class="card-entreprise" id="{{ $company->id }}">
           <div class="front-entreprise">
             <div class="front-content-entreprise">
               <img src="{{ asset('/images/company_pictures/'.$company->image) }}" alt="photo" />
@@ -80,7 +79,6 @@
                     <i class="gray fa fa-star" class="gray" aria-hidden="true"></i>
                 @endfor
               </div>
-              <div class="front-content-etudiant-more">{{ $company->offers }} offres</a></div>
                 <h2>{{ $company->name }}</h2>
             </div>
           </div>
@@ -97,7 +95,7 @@
     <div class="box-etudiants">
         @foreach ($last_3_users->reverse() as $user)
         <div class="container-etudiant">
-            <div class="card-etudiant">
+            <div class="card-etudiant" id="{{ $user->id }}">
                 <div class="front-etudiant">
                     <div class="front-content-etudiant">
                         <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" />
