@@ -8,7 +8,7 @@
     <div class="box">
       <div class="photoNameAdress">
         <img src="{{ asset('/images/profile_pictures/'.$student->image) }}" alt="photo" id="profilePicture">
-        <h0>{{ $student->name }}</h0>
+        <h1>{{ $student->name }}</h1>
         <div class="adress">
           <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">
           <img src="{{ asset('/images/dashboard/image_48.png') }}" alt="logoMail" id="logoMail">
@@ -18,7 +18,7 @@
       </div>
       <div class="bio">
         <h1>Biographie</h1>
-        <h3>{{ $student->description }}</h3>
+        <h2>{{ $student->description }}</h2>
       </div>
       <div class="skills">
         <h1>Compétences</h1>

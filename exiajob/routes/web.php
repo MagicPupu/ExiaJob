@@ -43,6 +43,5 @@ Route::get('pilots', [UsersController::class, 'pilots'])->name('pilots');
 Route::get('pilots/card/{id}', [UsersController::class, 'card_pilot'])->name('card-pilot');
 Route::get('students/card/{id}', [UsersController::class, 'card_student'])->name('card-student');
 Route::delete('students/card/{id}', [UsersController::class, 'destroy_student'])->name('destroy-student');
-Route::delete('students/card/{id}', [UsersController::class, 'destroy_pilot'])->name('destroy-pilot');
 
 Route::get('search', [SearchController::class, 'index'])->name('search');

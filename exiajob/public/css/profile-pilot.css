@@ -179,7 +179,7 @@
      padding-top: 2.5%;
  }
 
- .bio h3 {
+ .bio h2 {
      font-family: 'Inter';
      font-weight: 500;
      font-size: 2vw;
@@ -214,11 +214,11 @@
      grid-template-rows: 40%;
  }
 
- .box h0 {
-     font-family: 'DM Sans';
-     font-size: 4vw;
-     line-height: 150%;
-     margin-top: 30%;
+ .photoNameAdress h1 {
+    font-family: 'DM Sans';
+    font-size: 4vw;
+    line-height: 150%;
+    margin-top: 30%;
  }
 
  #edit {

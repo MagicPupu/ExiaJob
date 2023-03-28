@@ -60,12 +60,12 @@
 
         @if (auth()->check())
           @auth
-            @if (Auth::user()->status == 'pilot' or 'admin')
-              <a href="{{ route('profile-pilot') }}">
+            @if (Auth::user()->status == 'student')
+              <a href="{{ route('profile-student') }}">
                 <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
               </a>
-            @elseif (Auth::user()->status == 'student')
-              <a href="{{ route('profile-student') }}">
+            @elseif (Auth::user()->status == 'pilot' or 'admin')
+              <a href="{{ route('profile-pilot') }}">
                 <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
               </a>
             @endif

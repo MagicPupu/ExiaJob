@@ -8,7 +8,7 @@
     <div class="box">
       <div class="photoNameAdress">
         <img src="{{ asset('/images/profile_pictures/'.$pilot->image) }}" alt="photo" id="profilePicture">
-        <h0>{{ $pilot->name }}</h0>
+        <h1>{{ $pilot->name }}</h1>
         <div class="adress">
           <img src="{{ asset('/images/dashboard/image_47.png') }}" alt="logoTel" id="logoTel">
           <img src="{{ asset('/images/dashboard/image_48.png') }}" alt="logoMail" id="logoMail">
@@ -18,7 +18,7 @@
       </div>
       <div class="bio">
         <h1>Biographie</h1>
-        <h3>{{ $pilot->description }}</h3>
+        <h2>{{ $pilot->description }}</h2>
       </div>
       <div class="skills">
         <h1>Compétences</h1>
@@ -38,19 +38,6 @@
           <h2>{{ $pilot->promo }}</h2>
         </div>
       </div>
-
-      <div class="bottombutton">
-        @auth
-          @if (Auth::user()->status == 'admin')
-            <form action="{{ route('destroy-pilot', $pilot->id) }}" method="post">
-              @csrf
-              @method('DELETE')
-              <button type="submit">Supprimer</button>
-            </form>
-          @endif
-        @endauth
-      </div>
-
     </div>
 </body>
 @endsection

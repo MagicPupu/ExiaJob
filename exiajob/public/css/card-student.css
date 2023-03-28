@@ -59,7 +59,7 @@
      padding-top: 2.5%;
  }
 
- .bio h3 {
+ .bio h2 {
      font-family: 'Inter';
      font-weight: 500;
      font-size: 2vw;
@@ -99,7 +99,7 @@
     object-fit: cover;
  }
 
- .box h0 {
+ .photoNameAdress h1 {
      font-family: 'DM Sans';
      font-size: 4vw;
      line-height: 150%;

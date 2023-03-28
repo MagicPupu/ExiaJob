@@ -15,12 +15,16 @@ class ProfileController extends Controller
 {
     public function pilot() {
 
-        $user = Auth::user();
-        $offers = Offer::join('companies', 'offers.idCompany', '=', 'companies.id')
-                    ->select('offers.*', 'companies.*')
-                    ->get();
+        if (Auth::user()->status == 'student') {
+            return redirect(403);
+        } else {
+            $user = Auth::user();
+            $offers = Offer::join('companies', 'offers.idCompany', '=', 'companies.id')
+                        ->select('offers.*', 'companies.*')
+                        ->get();
 
-        return view('pages.user.profile-pilot', compact('user', 'offers'));
+            return view('pages.user.profile-pilot', compact('user', 'offers'));
+        }
     }
 
     public function student() {

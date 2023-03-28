@@ -8,7 +8,7 @@
     <div class="box">
       <div class="photoNameAdress">
         <img src="{{ asset('/images/profile_pictures/'.$user->image) }}" alt="photo" id="profilePicture">
-        <h0>{{ $user->name }}</h0>
+        <h1>{{ $user->name }}</h1>
         <a href="{{ route('edit-profile') }}">
           <img src="{{ asset('/images/dashboard/image_46.png') }}" alt="edit" id="edit">
         </a>
@@ -21,7 +21,7 @@
       </div>
       <div class="bio">
         <h1>Biographie</h1>
-        <h3>{{ $user->description }}</h3>
+        <h2>{{ $user->description }}</h2>
       </div>
       <div class="skills">
         <h1>Compétences</h1>

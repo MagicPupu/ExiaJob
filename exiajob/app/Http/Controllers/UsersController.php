@@ -57,11 +57,4 @@ class UsersController extends Controller
 
         return redirect('/students');
     }
-
-    public function destroy_pilot($id) {
-        
-        User::findOrFail($id)->delete();
-
-        return redirect('/pilots');
-    }
 }
