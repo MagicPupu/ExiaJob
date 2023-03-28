@@ -41,6 +41,11 @@ main {
     margin-left: 38.125%;
 }
 
+.home-job img {
+    width: auto;
+    height: auto;
+}
+
 /*deux barre de recherche*/
 .barre-recherche1 {
     position: relative;
