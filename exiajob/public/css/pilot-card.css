@@ -258,3 +258,29 @@
 .gray {
     color: gray;
 }
+
+
+.bottombutton button {
+    cursor: pointer;
+    font-family: 'Inter';
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    margin: 2vw;
+    border: 0.15vw solid rgb(20 8 8);
+}
+
+.bottombutton a {
+    cursor: pointer;
+    font-family: 'Inter';
+    font-size: 1.5vw;
+}
+
+.bottombutton {
+    display: flex;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    justify-content: space-around;
+    border: 1vw solid rgba(20, 8, 8, 0);
+
+}

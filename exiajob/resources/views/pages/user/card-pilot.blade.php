@@ -38,6 +38,19 @@
           <h2>{{ $pilot->promo }}</h2>
         </div>
       </div>
+
+      <div class="bottombutton">
+        @auth
+          @if (Auth::user()->status == 'admin')
+            <form action="{{ route('destroy-pilot', $pilot->id) }}" method="post">
+              @csrf
+              @method('DELETE')
+              <button type="submit">Supprimer</button>
+            </form>
+          @endif
+        @endauth
+      </div>
+
     </div>
 </body>
 @endsection

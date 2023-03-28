@@ -140,3 +140,21 @@ header {
     border-radius: 50%;
     object-fit: cover;
 }
+
+footer {
+    background-color: #cbcbcb70;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 2vw;
+    color: #6C6C6C;
+}
+
+body {
+    margin: 0;
+}

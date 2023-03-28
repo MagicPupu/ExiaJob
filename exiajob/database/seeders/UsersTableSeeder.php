@@ -101,5 +101,17 @@ class UsersTableSeeder extends Seeder
         $user->third_skill = "JS";
         $user->status = "pilot";
         $user->save();
+
+        $user = new \App\Models\User();
+        $user->name = "admin";
+        $user->email = "admin@gmail.com";
+        $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
+        $user->phone = '0000000000';
+        $user->image = "admin.png";
+        $user->description = "admin";
+        $user->centre = "admin";
+        $user->promo = "admin";
+        $user->status = "admin";
+        $user->save();
     }
 }

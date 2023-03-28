@@ -60,7 +60,7 @@
 
         @if (auth()->check())
           @auth
-            @if (Auth::user()->status == 'pilot')
+            @if (Auth::user()->status == 'pilot' or 'admin')
               <a href="{{ route('profile-pilot') }}">
                 <img src="{{ asset('/images/profile_pictures/'.Auth::user()->image) }}" alt="profile-picture"/>
               </a>
@@ -78,7 +78,8 @@
   @yield('content')
 
   <footer>
-    
+    <p>© 2023 Groupe 1 A2 info All rights reserved.</p>
+    <p><a href="mailto:julgaborieau@gmail.com?subject=HTML link">contact us</a></p>
   </footer>
 </body>
 

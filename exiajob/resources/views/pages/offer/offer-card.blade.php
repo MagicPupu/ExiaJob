@@ -65,7 +65,7 @@
 
         <div class="bottombutton">
         @auth
-          @if (Auth::user()->status == 'pilot')
+          @if (Auth::user()->status == 'pilot' or 'admin')
             <form action="{{ route('destroy-offer', $offer->id) }}" method="post">
               @csrf
               @method('DELETE')
