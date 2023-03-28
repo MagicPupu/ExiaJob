@@ -9,15 +9,38 @@
         <form action="{{ route('update-profile', $user->id) }}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
-            <div class="search-box">
-                <input type="text" id="search" placeholder="Recherchez une compétence">
-            </div>
-            <select id="skills" size="10">
-            </select>
-            <div class="selected-skills">
-                <h2>Compétences sélectionnées:</h2>
-                <ul id="selected-skills-list">
-                </ul>
+            <h2>Choisissez jusqu'à trois compétences:</h2>
+            <div id="skill-form">
+                <div class="skill-container">
+                    <h2>Compétences 1:</h2>
+                    <select name="skills1" multiple>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </div>
+                <div class="skill-container">
+                    <h2>Compétences 2:</h2>
+                    <select name="skills2" multiple>
+                        <option value="React">React</option>
+                        <option value="Vue">Vue</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Node">Node</option>
+                        <option value="Express">Express</option>
+                    </select>
+                </div>
+                <div class="skill-container">
+                    <h2>Compétences 3:</h2>
+                    <select name="skills3" multiple>
+                        <option value="MySQL">MySQL</option>
+                        <option value="PostgreSQL">PostgreSQL</option>
+                        <option value="MongoDB">MongoDB</option>
+                        <option value="Redis">Redis</option>
+                        <option value="Firebase">Firebase</option>
+                    </select>
+                </div>
             </div>
             <div class="additional-info">
                 <h2>Informations supplémentaires:</h2>

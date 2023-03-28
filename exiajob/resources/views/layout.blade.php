@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
   <title>{{ config('app.name') }}</title>
   <meta charset="utf_8">

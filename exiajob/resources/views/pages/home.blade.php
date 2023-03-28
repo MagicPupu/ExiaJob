@@ -9,16 +9,6 @@
         <div class="phrase-accroche">
           <p>Trouvez le stage <br> de vos <span style="color:#FCB4B5">rêves 🏝️</span></p>
         </div>
-        <div class="barre-recherche1">
-          <span class="search-icon"><i class="fas fa-search"></i></span>
-          <input type="text" id="search" placeholder="Recherche par entreprise">
-          <button type="submit"><i class="submit1"></i></button>
-        </div>
-        <div class="barre-recherche2">
-          <input type="text" id="search" placeholder="Recherche par lieu">
-          <span class="search-icon"><i class="fas fa-search"></i></span>
-          <button type="submit"><i class="submit2"></i></button>
-        </div>
         <br>
         <br>
         <div class="para1">

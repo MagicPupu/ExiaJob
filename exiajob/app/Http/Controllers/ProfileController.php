@@ -73,6 +73,9 @@ class ProfileController extends Controller
     public function update(Request $request, $id) {
 
         $user = User::findOrFail($id);
+        $user->first_skill = $request->skills1;
+        $user->second_skill = $request->skills2;
+        $user->third_skill = $request->skills3;
         $user->description = $request->description;
         $user->cv = $request->cv;
         $user->phone = $request->phone;
