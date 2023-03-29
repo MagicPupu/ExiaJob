@@ -26,10 +26,10 @@ Route::patch('edit-profile/{id}', [ProfileController::class, 'update'])->name('u
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');
-Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
 
 Route::get('offers', [OfferController::class, 'index'])->name('offers');
-Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-card');
+Route::get('offers/card/{id}', [OfferController::class, 'card'])->name('offer-card')->middleware('auth');
 Route::get('offers/candidate/{id}', [OfferController::class, 'candidate'])->name('candidate')->middleware('auth');
 Route::get('offers/create', [OfferController::class, 'add_offer'])->name('add-offer');
 Route::post('offers/create', [OfferController::class, 'store'])->name('store-offer');
@@ -40,8 +40,8 @@ Route::get('companies/card/{id}', [CompaniesController::class, 'card_company'])-
 
 Route::get('students', [UsersController::class, 'students'])->name('students');
 Route::get('pilots', [UsersController::class, 'pilots'])->name('pilots');
-Route::get('pilots/card/{id}', [UsersController::class, 'card_pilot'])->name('card-pilot');
-Route::get('students/card/{id}', [UsersController::class, 'card_student'])->name('card-student');
+Route::get('pilots/card/{id}', [UsersController::class, 'card_pilot'])->name('card-pilot')->middleware('auth');
+Route::get('students/card/{id}', [UsersController::class, 'card_student'])->name('card-student')->middleware('auth');
 Route::delete('students/card/{id}', [UsersController::class, 'destroy_student'])->name('destroy-student');
 
 Route::get('search', [SearchController::class, 'index'])->name('search');
