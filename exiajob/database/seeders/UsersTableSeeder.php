@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
     {
         $user = new \App\Models\User();
         $user->name = "Léon De Fonrocque";
-        $user->email = "don.leon@gmail.com";
+        $user->email = "leon.defonrocque@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0656321475';
         $user->image = "leondefronrocque.png";
@@ -29,7 +29,7 @@ class UsersTableSeeder extends Seeder
 
         $user = new \App\Models\User();
         $user->name = "Julien Gaborieau";
-        $user->email = "le.j@gmail.com";
+        $user->email = "julien.gaborieau@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0675841258';
         $user->image = "juliengaborieau.png";
@@ -44,7 +44,7 @@ class UsersTableSeeder extends Seeder
 
         $user = new \App\Models\User();
         $user->name = "Antoine Pulon";
-        $user->email = "magic.pupu@gmail.com";
+        $user->email = "antoine.pulon@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0649751023';
         $user->image = "antoinepulon.png";
@@ -59,7 +59,7 @@ class UsersTableSeeder extends Seeder
 
         $user = new \App\Models\User();
         $user->name = "Roméo Boesh";
-        $user->email = "joe.biden@gmail.com";
+        $user->email = "romeo.boesh@gmail.com";
         $user->password = "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"; //password
         $user->phone = '0625741586';
         $user->image = "romeoboesh.png";
