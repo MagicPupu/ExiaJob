@@ -26,6 +26,8 @@
   <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/7F3iKz7X7B59D2v5z5u5g5/qLBw5mv1r0vzj+9" crossorigin="anonymous">
+
+  <link rel="manifest" href="{{ asset('manifest.json') }}">
 </head>
 
 <body>
@@ -83,6 +85,25 @@
     <p>© 2023 Groupe 1 A2 info All rights reserved.</p>
     <p><a href="mailto:julgaborieau@gmail.com?subject=HTML link">contact us</a></p>
   </footer>
+
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/serviceworker.js")
+        .then((registration) => {
+          console.log(
+            "Service Worker enregistré avec succès : ",
+            registration.scope
+          );
+        })
+        .catch((error) => {
+          console.log("Échec de l'enregistrement du Service Worker : ", error);
+        });
+    });
+  }
+</script>
+
 </body>
 
 </html>
